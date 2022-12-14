@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HotelRoutingModule } from './hotel-routing.module';
 import { HotelComponent } from './hotel.component';
-import { HomeComponent } from './home/home.component';
+import { HotelHomeComponent } from './hotel-home/hotel-home.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+
 
 
 @NgModule({
   declarations: [
     HotelComponent,
-    HomeComponent
+    HotelHomeComponent
   ],
   imports: [
     CommonModule,
-    HotelRoutingModule
+    HotelRoutingModule,
+    SharedModule
   ]
 })
 export class HotelModule { }
