@@ -1,0 +1,62 @@
+<header
+  class="grid grid-cols-1 lg:grid-cols-2 h-screen"
+>
+  <div class="relative overflow-hidden">
+    <div class="">
+      <owl-carousel-o [options]="hotelHeader">
+        <ng-container *ngFor="let images of imagesStore">
+          <ng-template carouselSlide [id]="images.id">
+            <div class="h-full">
+              <img [src]="images.src" class="object-cover" />
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <div
+      class="flex items-center justify-center text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10"
+    >
+      <div class="w-64 mx-auto">
+        <p class="font-thin text-sm text-white">DISCOVER NOW</p>
+        <h2 class="text-2xl md:text-3xl font-bold my-5 sm:my-8 text-white">
+          Welcome to Protouch Hotel and Resort
+        </h2>
+        <button
+          class="bg-[#FFFEFE] w-40 sm:w-52 mx-auto cursor-pointer text-center text-[#E44200] py-3 px-5 rounded"
+          routerLink="/hotel"
+        >
+          Hotel and Suites
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="relative overflow-hidden">
+    <div class="">
+      <owl-carousel-o [options]="cakeHeader">
+        <ng-container *ngFor="let images of imagesStore2">
+          <ng-template carouselSlide [id]="images.id">
+            <div class="h-full">
+              <img [src]="images.src" class="object-cover" />
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <div
+      class="flex items-center justify-center text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10"
+    >
+      <div class="w-64 mx-auto">
+        <p class="font-thin text-sm text-white">DISCOVER NOW</p>
+        <h2 class="text-2xl md:text-3xl font-bold my-5 sm:my-8 text-white">
+          Welcome to Protouch Cakes and Pastries
+        </h2>
+        <button
+          class="text-[#FFFEFE] w-52 mx-auto cursor-pointer text-center bg-[#E44200] py-3 px-5 rounded"
+          routerLink="/cake"
+        >
+          Cakes and Pastries
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
