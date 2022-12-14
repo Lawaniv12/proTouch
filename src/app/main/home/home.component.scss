@@ -1,0 +1,32 @@
+
+.about-2 .owl-theme .owl-nav{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.about-2 .owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset;
+    padding: 0;
+    margin: 0;
+}
+.testimonial .owl-theme {
+    position: relative;
+}
+
+.testimonial .owl-theme .owl-nav{
+    display: none;
+}
+.testimonial .owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset;
+    // display: none;
+}
+@media (min-width: 768px) {
+    .about-2 .owl-theme .owl-nav{
+        display: block;
+    }
+    .testimonial .owl-theme .owl-nav{
+        display: block;
+    }
+}
