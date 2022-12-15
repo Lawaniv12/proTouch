@@ -1,0 +1,47 @@
+<nav
+  class="bg-white nav-shadow flex justify-between items-center px-8 py-3 md:px-12 md:py-5 sticky top-0 left-0 right-0 z-20"
+>
+  <div class="flex md:gap-16 lg:gap-24 justify-between">
+    <div class="text-[#E44200]">Logo</div>
+    <div class="hidden md:flex gap-6">
+      <div
+        class="cursor-pointer font-light text-[#232323] hover:text-[#E44200]"
+        routerLink="/cake"
+        routerLinkActive="active-nav"
+        [routerLinkActiveOptions]="{'exact': true}"
+      >
+        Home
+      </div>
+      <div
+        class="cursor-pointer font-light text-[#232323] hover:text-[#E44200]"
+        routerLink="/cake/product"
+        routerLinkActive="active-nav"
+      >
+        Product
+      </div>
+      <div
+        class="cursor-pointer font-light  hover:text-[#E44200]"
+        routerLink="/cake/about"
+        routerLinkActive="active-nav"
+      >
+        About
+      </div>
+      <div
+        class="cursor-pointer font-light text-[#232323] hover:text-[#E44200]"
+        routerLink="/cake/contact"
+        routerLinkActive="active-nav"
+      >
+        Contact
+      </div>
+    </div>
+  </div>
+  <div class="hidden md:flex gap-4">
+    <div class="hidden lg:flex items-center gap-2">
+      <div class="w-6"><img src="../../assets/icons/phone.png" class="w-full" alt="" /></div>
+      <span class="text-[#E44200] block">+234 905 43 231 445</span>
+    </div>
+    <a href="tel:+2347017909308" class="px-5 py-3 rounded-xl bg-[#EC4406] hover:bg-[#ac3104] text-white">
+      Place an Order
+    </a>
+  </div>
+</nav>
