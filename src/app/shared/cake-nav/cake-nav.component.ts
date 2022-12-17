@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cake-nav.component.scss']
 })
 export class CakeNavComponent implements OnInit {
-
+  navToggle: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showNavToggle(){
+    this.navToggle = !this.navToggle
+  }
+  closeNavToggle(){
+    this.navToggle = false
   }
 
 }
