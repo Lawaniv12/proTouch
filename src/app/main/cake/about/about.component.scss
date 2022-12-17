@@ -1,0 +1,18 @@
+.owl-carousel .owl-item img{
+    width: unset;
+}
+#cake-card .owl-theme .owl-nav{
+    margin-top: 0;
+    height: 0;
+    display: none;
+}
+#cake-card .owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset;
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    #cake-card .owl-theme .owl-nav{
+        display: block;
+    }
+}
