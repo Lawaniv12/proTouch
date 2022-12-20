@@ -1,17 +1,18 @@
-<header class="p-6 md:py-10 md:px-16 font-worksans cursor-pointer">
+<header class="p-6 md:py-10 md:px-16 font-worksans cursor-pointer px-8 py-3 fixed top-0 left-0 right-0 z-30 h-[56px] md:h-[71px] lg:h-[79px] text-white">
   <nav class="flex justify-between">
-    <p>
+    <p routerLink="/main/">
       ProTouch Groups
     </p>
     <div class="flex gap-5">
       <p 
-      routerLink="/main/home">
+      routerLink="/hotel">
       HOME
       </p>
-      <p>ROOMS</p>
-      <p>SERVICES</p>
-      <p>ABOUT US</p>
+      <p routerLink="/hotel/rooms">ROOMS</p>
+      <p routerLink="/hotel/events">EVENTS</p>
+      <p routerLink="">ABOUT US</p>
       <p>CONTACT US</p>
     </div>
   </nav>
 </header>
+

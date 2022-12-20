@@ -1,3 +1,151 @@
 <header class="">
-      <app-header></app-header>
+  <owl-carousel-o [options]="hotelHeader">
+    <ng-container *ngFor="let images of imagesStore">
+      <ng-template carouselSlide [id]="images.id">
+        <div class="md:h-screen">
+          <img src={{images.src}} class="object-cover md:w-full" />
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
 </header>
+
+<app-header></app-header>
+
+<section class="md:mt-[230px] mt-5 p-8">
+  <div class="mx-auto md:w-[80%] w-[90%]">
+    <p class="flex justify-center mb-16 font-playfair text-3xl">Our Rooms</p>
+  
+    <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2" >
+      <div class="shadow-md p-0 overflow-hidden" *ngFor="let room of roomCategories">
+        <img [src]="room.picture" alt="" class="scale-100 room">
+        <p class="flex justify-center mt-6 my-6 text-base font-worksans">{{room.roomName}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="md:mt-[280px] mt-[120px]">
+  <div class="mx-auto w-[80%] flex items-center justify-between gap-8 lg:flex-row flex-col">
+    <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]">
+    <div>
+      <p class="text-[#F23A2E] font-worksans text-base mb-6"> About Us </p>
+      <p class="font-playfair text-4xl mb-9 w-[70%]"> Welcome To PreTouch Hotels and Suites </p>
+      <p class="font-worksans text-base mb-3">
+        With over 340 Hotels Worldwide, PreTouch Hotel has offered a wide variety of audience accross quality and premium service at a very affordable
+        price.
+      </p>
+      <p>Manager: <span class="text-[#F23A2E]"> Chimanda Emeka </span></p>
+    </div>
+  </div>
+</section>
+
+<section class="mt-[280px] bg-[#F8F9FA] md:p-12">
+  <div class="mx-auto w-[80%]">
+    <p class="flex justify-center mb-16 font-playfair text-3xl"> Hotel Features </p>
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 justify-center md:gap-6 gap-3 w-[9 mx-auto items-center">
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/swimming.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Swimming Pool</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/traffic-jam.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Car Parking</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/emergency-exit.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Fire Exit</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/hair-dryer.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Hair Dryer</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/mini-bar.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Minibar</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/drinks.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Drinks</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/car-one.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Car Airport</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/hotel-teller.svg" alt="">
+      <p class="text-[#F23A2E] font-worksans text-lg">Car Airport</p>
+     </div>
+    </div>
+  </div>
+
+
+<div class="p-5 sm:p-8 md:p-20 testimonial mx-auto mt-12" id="testimonials">
+  <owl-carousel-o [options]="testimonialsCarousel">
+    <ng-template carouselSlide>
+      <div class="">
+        <section class="grid grid-cols-1 sm:flex gap-8 items-center md:px-12">
+          <div class="sm:w-1/2 md:w-1/4">
+            <img src="assets/hotel/img-5.png" class="w-full" alt="" />
+          </div>
+          <div class="sm:w-1/2 md:w-3/4">
+            <h3 class="text-[#661D00] font-semibold font-playfair">Testimonials</h3>
+            <h2 class="font-bold text-2xl md:text-3xl w-3/4 my-7 font-playfair">
+              Our Customers Love Us
+            </h2>
+            <p class="mb-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+              officiis ipsum sed placeat? Obcaecati id sit, dolorum qui maxime
+              ex consequatur
+            </p>
+          </div>
+        </section>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="">
+        <section class="grid grid-cols-1 sm:flex gap-8 items-center md:px-12">
+          <div class="sm:w-1/2 md:w-1/4">
+            <img src="assets/hotel/img-5.png" class="w-full" alt="" />
+          </div>
+          <div class="sm:w-1/2 md:w-3/4">
+            <h3 class="text-[#661D00] font-semibold">Testimonials</h3>
+            <h2 class="font-bold text-2xl md:text-3xl w-3/4 my-7">
+              Our Customers Love Us
+            </h2>
+            <p class="mb-5 w-3/4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+              officiis ipsum sed placeat? Obcaecati id sit, dolorum qui maxime
+              ex consequatur
+            </p>
+          </div>
+        </section>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>
+
+<div class="m-0 md:my-10 md:my-[unset] md:m-20 p-10 mt-24" id="contact">
+  <section
+    class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10"
+  >
+    <div>
+      <h3 class="font-bold text-2xl md:text-3xl text-white mb-2">
+        Contact Us now!
+      </h3>
+      <p class="text-[#D9D9D9]">
+        Contact (+234 904 554 221) to book directly or for advice
+      </p>
+    </div>
+    <button
+      class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#E44200] py-3 px-5 rounded"
+    >
+      Contact Us
+    </button>
+  </section>
+</div>
+</section>
+
+<app-hotel-footer></app-hotel-footer>
+

@@ -4,18 +4,28 @@ import { HotelRoutingModule } from './hotel-routing.module';
 import { HotelComponent } from './hotel.component';
 import { HotelHomeComponent } from './hotel-home/hotel-home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { RoomsComponent } from './rooms/rooms.component';
+import { AboutHotelComponent } from './about-hotel/about-hotel.component';
+import { ContactHotelComponent } from './contact-hotel/contact-hotel.component';
+
 
 
 
 @NgModule({
   declarations: [
     HotelComponent,
-    HotelHomeComponent
+    HotelHomeComponent,
+    RoomsComponent,
+    AboutHotelComponent,
+    ContactHotelComponent
   ],
   imports: [
     CommonModule,
     HotelRoutingModule,
-    SharedModule
+    SharedModule,
+    CarouselModule,
+  
   ]
 })
 export class HotelModule { }

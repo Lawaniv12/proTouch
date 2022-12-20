@@ -17,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     CommonModule,
     MainRoutingModule,
     SharedModule,
-    CarouselModule
+    CarouselModule,
+    
   ]
 })
 export class MainModule { }
