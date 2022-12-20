@@ -1,0 +1,41 @@
+.room{
+  transition: all .4s ease;
+}
+
+.room:hover{
+  transform: scale(1.1);
+  width: 100%;
+
+}
+
+.testimonial .owl-theme {
+  position: relative;
+}
+
+.testimonial .owl-theme .owl-nav{
+  display: none;
+}
+.testimonial .owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+  background: unset;
+  // display: none;
+}
+
+#contact{
+  background: url(../../../assets/hotel/contact.svg);
+  position: relative;
+}
+#contact::after{
+  position: absolute;
+  content: "";
+  background: #363636C4;
+  inset: 0;
+}
+
+@media (min-width: 768px) {
+  .about-2 .owl-theme .owl-nav{
+      display: block;
+  }
+  .testimonial .owl-theme .owl-nav{
+      display: block;
+  }
+}

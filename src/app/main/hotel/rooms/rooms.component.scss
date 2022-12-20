@@ -1,0 +1,15 @@
+.header-bg{
+  background: url(../../../../assets/hotel/rooms/header.svg);
+  width: 100%;
+  object-fit: contain;
+}
+
+.room{
+  transition: all .4s ease;
+}
+
+.room:hover{
+  transform: scale(1.1);
+  width: 100%;
+
+}

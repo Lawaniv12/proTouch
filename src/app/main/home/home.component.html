@@ -7,7 +7,7 @@
         <ng-container *ngFor="let images of imagesStore">
           <ng-template carouselSlide [id]="images.id">
             <div class="h-full">
-              <img [src]="images.src" class="object-cover" />
+              <img src={{images.src}} class="object-cover" />
             </div>
           </ng-template>
         </ng-container>
@@ -36,7 +36,7 @@
         <ng-container *ngFor="let images of imagesStore2">
           <ng-template carouselSlide [id]="images.id">
             <div class="h-full">
-              <img [src]="images.src" class="object-cover" />
+              <img src={{images.src}} class="object-cover" />
             </div>
           </ng-template>
         </ng-container>
