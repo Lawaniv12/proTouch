@@ -1,16 +1,20 @@
 <header class="">
-  <owl-carousel-o [options]="hotelHeader">
+  <owl-carousel-o [options]="hotelHeader" class="hidden md:block">
     <ng-container *ngFor="let images of imagesStore">
       <ng-template carouselSlide [id]="images.id">
-        <div class="md:h-screen">
+        <div class="md:h-screen h-[90%]">
           <img src={{images.src}} class="object-cover md:w-full" />
         </div>
       </ng-template>
     </ng-container>
   </owl-carousel-o>
+  
 </header>
+<app-header class="block h-[95%] md:hidden"
+  title="ProTouch Hotel and Suites"
+  subtitle="Welcome to Comfort"></app-header>
 
-<app-header></app-header>
+<app-hotel-nav></app-hotel-nav>
 
 <section class="md:mt-[230px] mt-5 p-8">
   <div class="mx-auto md:w-[80%] w-[90%]">
@@ -81,7 +85,7 @@
   </div>
 
 
-<div class="p-5 sm:p-8 md:p-20 testimonial mx-auto mt-12" id="testimonials">
+<div class="p-5 sm:p-8 md:p-20 testimonial mx-auto mt-24" id="testimonials">
   <owl-carousel-o [options]="testimonialsCarousel">
     <ng-template carouselSlide>
       <div class="">
@@ -90,7 +94,7 @@
             <img src="assets/hotel/img-5.png" class="w-full" alt="" />
           </div>
           <div class="sm:w-1/2 md:w-3/4">
-            <h3 class="text-[#661D00] font-semibold font-playfair">Testimonials</h3>
+            <h3 class="text-[#F23A2E] font-semibold font-playfair">Testimonials</h3>
             <h2 class="font-bold text-2xl md:text-3xl w-3/4 my-7 font-playfair">
               Our Customers Love Us
             </h2>
