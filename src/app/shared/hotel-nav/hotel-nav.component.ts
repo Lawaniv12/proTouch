@@ -15,15 +15,16 @@ export class HotelNavComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     let navbar = document.querySelector('.navbar') as HTMLElement;
-    let body = document.querySelector('body') as HTMLElement;
+    let body = document.querySelector('html') as HTMLElement;
     if (navbar != undefined) {
       if (body.scrollTop > navbar.clientHeight) {
-        navbar.style.backgroundColor = 'transparent';
-        navbar.style.color = '#F23A2E';
-      } else {
         navbar.style.backgroundColor = '#EBF7FF';
         navbar.style.boxShadow = '0 0 2px #EBF7FF';
         navbar.style.color = 'black';
+      } else {
+        navbar.style.backgroundColor = 'transparent';
+        navbar.style.boxShadow = 'unset';
+        navbar.style.color = '#FFFFFF';
       }
     }
   }
