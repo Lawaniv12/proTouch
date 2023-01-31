@@ -16,28 +16,28 @@ export class HotelComponent implements OnInit {
 
   roomCategories = [
     {
+      roomName: 'Executive Room',
+      picture: 'assets/hotel/about-us/executive-room.jpg'
+    },
+    {
       roomName: 'Standard Room',
-      picture: 'assets/hotel/hotel-room-1.jpg'
+      picture: 'assets/hotel/about-us/standard-room.jpg'
     },
     {
-      roomName: 'Family Room',
-      picture: 'assets/hotel/hotel-room-2.jpg'
+      roomName: 'Executive Suite',
+      picture: 'assets/hotel/about-us/executive-suite.jpg'
     },
     {
-      roomName: 'Single Room',
-      picture: 'assets/hotel/hotel-room-3.jpg'
+      roomName: 'Royal Suite',
+      picture: 'assets/hotel/about-us/royal-suite.jpg'
     },
     {
-      roomName: 'Delux Room',
-      picture: 'assets/hotel/hotel-room-4.jpg'
+      roomName: 'Open Terrace Bar',
+      picture: 'assets/hotel/about-us/open-terrace-bar.jpg'
     },
     {
-      roomName: 'Luxury Room',
-      picture: 'assets/hotel/hotel-room-5.jpg'
-    },
-    {
-      roomName: 'Luxury Room',
-      picture: 'assets/hotel/hotel-room-5.jpg'
+      roomName: 'Reception',
+      picture: 'assets/hotel/about-us/reception.jpg'
     },
   ]
 
@@ -87,7 +87,7 @@ export class HotelComponent implements OnInit {
     navSpeed: 700,
     autoplay: true,
     autoplaySpeed: 700,
-    navText: ['<div class="absolute top-1/2 -translate-y-1/2 left-0 w-4 md:w-6 cursor-pointer"><img src="../../../assets/hotel/arrow-left.png" class="w-full" alt=""/></div>', '<div class="absolute top-1/2 -translate-y-1/2 right-0 w-4 md:w-6 cursor-pointer"><img src="../../../assets/hotel/arrow-right.png" class="w-full" alt="" /></div>'],
+    navText: ['<div class="absolute top-1/2 -translate-y-1/2 left-0 w-4 md:w-10 cursor-pointer"><img src="../../../assets/hotel/left-arrow.png" class="w-full" alt=""/></div>', '<div class="absolute top-1/2 -translate-y-1/2 right-0 w-4 md:w-10 cursor-pointer"><img src="../../../assets/hotel/right-arrow.png" class="w-full" alt="" /></div>'],
     responsive: {
       0: {
         items: 1
