@@ -18,8 +18,8 @@ export class HotelNavComponent implements OnInit {
     let body = document.querySelector('html') as HTMLElement;
     if (navbar != undefined) {
       if (body.scrollTop > navbar.clientHeight) {
-        navbar.style.backgroundColor = '#EBF7FF';
-        navbar.style.color = 'black';
+        navbar.style.backgroundColor = '#1A120B';
+        navbar.style.color = 'white';
       } else {
         navbar.style.backgroundColor = 'transparent';
         navbar.style.color = '#FFFFFF';
