@@ -1,56 +1,56 @@
 <nav
-  class="bg-white flex justify-between items-center px-8 py-3 md:px-12 md:py-5 fixed top-0 left-0 right-0 z-30 h-[56px] md:h-[71px] lg:h-[79px] shadow-md shadow-[#E4420040]"
+  class="bg-black flex justify-between items-center px-8 py-3 md:px-12 md:py-5 fixed top-0 left-0 right-0 z-30 h-[56px] md:h-[71px] lg:h-[79px] shadow-sm shadow-[#DAB74840]"
 >
-  <div class="flex md:gap-16 lg:gap-24 justify-between">
-    <div class="text-[#E44200] cursor-pointer" routerLink="/">Protouch Cake</div>
+  <div class="flex md:gap-16 lg:gap-24 justify-between items-center">
+    <div class="text-[#E44200] cursor-pointer" routerLink="/"><img src="assets/cake/protouch-cakes-edits.png" alt="" class="w-24"></div>
     <div class="hidden md:flex gap-6">
-      <div
-        class="cursor-pointer font-light text-[#232323] hover:text-[#E44200]"
+      <p
+        class="cursor-pointer font-light text-[#ffffff] hover:text-[#DAB748]"
         routerLink="/cake"
         routerLinkActive="active-nav"
         [routerLinkActiveOptions]="{ exact: true }"
       >
         Home
-      </div>
-      <div
-        class="cursor-pointer font-light text-[#232323] hover:text-[#E44200]"
+      </p>
+      <p
+        class="cursor-pointer font-light text-[#ffffff] hover:text-[#DAB748]"
         routerLink="/cake/product"
         routerLinkActive="active-nav"
       >
         Product
-      </div>
-      <div
-        class="cursor-pointer font-light hover:text-[#E44200]"
+      </p>
+      <p
+        class="cursor-pointer font-light hover:text-[#DAB748] text-[#ffffff]"
         routerLink="/cake/about"
         routerLinkActive="active-nav"
       >
         About
-      </div>
-      <div
-        class="cursor-pointer font-light text-[#232323] hover:text-[#E44200]"
+      </p>
+      <p
+        class="cursor-pointer font-light text-[#ffffff] hover:text-[#DAB748]"
         routerLink="/cake/contact"
         routerLinkActive="active-nav"
       >
         Contact
-      </div>
+      </p>
     </div>
   </div>
   <div class="hidden md:flex gap-4">
     <div class="hidden lg:flex items-center gap-2">
       <div class="w-6">
-        <img src="../../assets/icons/phone.png" class="w-full" alt="" />
+        <img src="../../assets/icons/phone-call.png" class="w-full" alt="" />
       </div>
-      <span class="text-[#E44200] block">+234 905 43 231 445</span>
+      <span class="text-[#DAB748] block">+234 905 43 231 445</span>
     </div>
     <a
       href="tel:+2347017909308"
-      class="px-5 py-3 rounded-xl bg-[#EC4406] hover:bg-[#ac3104] text-white"
+      class="px-5 py-3 rounded-xl bg-[#dab748] hover:bg-[#9b7701] text-white"
     >
       Place an Order
     </a>
   </div>
   <div
-    class="md:hidden cursor-pointer text-black text-2xl"
+    class="md:hidden cursor-pointer text-white text-2xl"
     (click)="showNavToggle()"
   >
     {{ navToggle ? "&times;" : "&#9776;" }}
@@ -61,42 +61,42 @@
   [ngClass]="{ 'h-72': navToggle }"
 >
   <div class="m-5 sm:m-8">
-    <div
-      class="cursor-pointer text-[#232323] font-medium text-left mb-5 hover:text-[#E44200]"
+    <p
+      class="cursor-pointer text-[#E44200] font-medium text-left mb-5 hover:text-[#DAB748]"
       (click)="closeNavToggle()"
       routerLink="/cake"
       routerLinkActive="active-nav"
       [routerLinkActiveOptions]="{ exact: true }"
     >
       Home
-    </div>
-    <div
-      class="cursor-pointer text-[#232323] font-medium text-left mb-5 hover:text-[#E44200]"
+    </p>
+    <p
+      class="cursor-pointer text-[#E44200] font-medium text-left mb-5 hover:text-[#DAB748]"
       (click)="closeNavToggle()"
       routerLink="/cake/product"
       routerLinkActive="active-nav"
     >
       Product
-    </div>
-    <div
-      class="cursor-pointer text-[#232323] font-medium text-left mb-5 hover:text-[#E44200]"
+    </p>
+    <p
+      class="cursor-pointer text-[#E44200] font-medium text-left mb-5 hover:text-[#DAB748]"
       (click)="closeNavToggle()"
       routerLink="/cake/about"
       routerLinkActive="active-nav"
     >
       About
-    </div>
-    <div
-      class="cursor-pointer text-[#232323] font-medium text-left mb-5 hover:text-[#E44200]"
+    </p>
+    <p
+      class="cursor-pointer text-[#E44200] font-medium text-left mb-5 hover:text-[#DAB748]"
       (click)="closeNavToggle()"
       routerLink="/cake/contact"
       routerLinkActive="active-nav"
     >
       Contact
-    </div>
+    </p>
     <a
       href="tel:+2347017909308"
-      class="px-5 py-3 rounded-xl bg-[#EC4406] hover:bg-[#ac3104] text-white mt-5 block w-40 text-center"
+      class="px-5 py-3 rounded-xl bg-[#DAB748] hover:bg-[#ac3104] text-white mt-5 block w-40 text-center"
     >
       Place an Order
     </a>

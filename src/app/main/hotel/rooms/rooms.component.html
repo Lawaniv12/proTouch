@@ -11,8 +11,11 @@ subtitle="LUXURIOUS PALACE">
     <p class="flex justify-center mb-16 font-playfair text-3xl">Our Rooms</p>
   
     <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2" >
-      <div class="shadow-md p-0 overflow-hidden" *ngFor="let room of roomCategories ">
-        <img [src]="room.picture" alt="" class="scale-100 room">
+      <div class="shadow-md p-0" *ngFor="let room of roomCategories ">
+        <div class="overflow-hidden">
+          <img [src]="room.picture" alt="" class="scale-100 room">
+        
+        </div>
         <p class="flex justify-center mt-6 my-6 text-base font-worksans">{{room.roomName}}</p>
       </div>
     </div>
