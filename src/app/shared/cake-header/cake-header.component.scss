@@ -1,0 +1,17 @@
+.header-background{
+  background: url(../../../assets/cake/cake-sample-14.jpg);
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.header-background::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.728);
+  z-index: 0;
+
+}
