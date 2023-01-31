@@ -1,5 +1,5 @@
 <header class="">
-  <owl-carousel-o [options]="hotelHeader" class="hidden md:block">
+  <owl-carousel-o [options]="hotelHeader" class="hidden md:block bg-[#f2f5f7]">
     <ng-container *ngFor="let images of imagesStore">
       <ng-template carouselSlide [id]="images.id">
         <div class="md:h-screen h-[90%]">
@@ -19,14 +19,14 @@
 
 <section class="py-24 bg-[#f2f5f7]">
   <div class="mx-auto md:w-[80%] w-[90%]">
-    <p class="flex justify-center mb-16 font-playfair text-3xl">Our Rooms</p>
+    <p class="flex justify-center mb-16 font-playfair text-4xl">Our Rooms</p>
   
     <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2" >
       <div class="shadow-md p-0 " *ngFor="let room of roomCategories">
         <div class="overflow-hidden">
           <img [src]="room.picture" alt="" class="scale-100 room">
         </div>
-        <p class="flex justify-center mt-6 my-6 text-base font-worksans">{{room.roomName}}</p>
+        <p class="flex justify-center mt-6 my-6 text-xl font-worksans">{{room.roomName}}</p>
       </div>
     </div>
   </div>
@@ -96,7 +96,7 @@
 
   <div class="mx-auto w-[90%] my-24">
     <p class="flex justify-center mb-16 font-playfair text-3xl"> Hotel Features </p>
-    <div class="grid md:grid-cols-4 sm:grid-cols-2 justify-center md:gap-6 gap-3 w-[9 mx-auto items-center">
+    <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
      <div class="flex flex-col items-center">
       <img src="assets/hotel/swimming.svg" alt="">
       <p class="text-[#62760C] font-worksans text-lg">Swimming Pool</p>
@@ -136,9 +136,9 @@
 
 </section>
 
-<div class="m-0 md:my-[unset] md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-black to-white" id="contact">
+<div class=" md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-black to-white" id="contact">
   <section
-    class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 px-24"
+    class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24"
   >
     <div>
       <h3 class="font-bold text-2xl md:text-5xl text-white mb-2">
