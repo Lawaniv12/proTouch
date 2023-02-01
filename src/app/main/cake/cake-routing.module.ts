@@ -8,7 +8,7 @@ import { ProductComponent } from './product/product.component';
 const routes: Routes = [
   { path: '', component: CakeComponent },
   { path: 'product', component: ProductComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'about-cake', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
 ];
 
