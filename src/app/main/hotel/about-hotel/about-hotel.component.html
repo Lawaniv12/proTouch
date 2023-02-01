@@ -22,7 +22,7 @@
   </div>
 </section>
 
-<section class="md:mt-[230px] mt-5 md:p-12 bg-[#F8F9FA]">
+<!-- <section class="md:mt-[230px] mt-5 md:p-12 bg-[#F8F9FA]">
   <div class="mx-auto md:w-[80%] w-[90%]">
     <p class="flex justify-center mb-16 font-playfair text-3xl">Our Staffs</p>
 
@@ -41,54 +41,50 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="mt-12 md:p-12">
-  <div class="mx-auto w-[80%]">
-    <p class="flex justify-center mb-16 font-playfair text-3xl">
-      Hotel Features
-    </p>
-    <div
-      class="grid md:grid-cols-4 sm:grid-cols-2 justify-center md:gap-6 gap-3 w-[90%] mx-auto items-center"
-    >
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/swimming.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Swimming Pool</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/traffic-jam.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Car Parking</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/emergency-exit.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Fire Exit</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/hair-dryer.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Hair Dryer</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/mini-bar.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Minibar</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/drinks.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Drinks</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/car-one.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Car Airport</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="assets/hotel/hotel-teller.svg" alt="" />
-        <p class="text-[#F23A2E] font-worksans text-lg">Car Airport</p>
-      </div>
+  <div class="mx-auto w-[90%] my-24">
+    <p class="flex justify-center mb-16 font-playfair text-3xl"> Hotel Features </p>
+    <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/swimming.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Swimming Pool</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/traffic-jam.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Car Parking</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/emergency-exit.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Fire Exit</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/hair-dryer.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Hair Dryer</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/mini-bar.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Minibar</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/drinks.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Drinks</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/car-one.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img src="assets/hotel/hotel-teller.svg" alt="">
+      <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
+     </div>
     </div>
   </div>
 
-  <div class="m-0 mt-[120px] p-6 sm:p-10">
+  <div class="m-0 mt-[120px] p-2 sm:p-2">
     <p class="flex justify-center mb-16 font-playfair text-3xl">Our Gallery</p>
-    <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:w-[80%] mx-auto">
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:w-[100%] mx-auto">
       <div *ngFor="let pictures of Gallery" class="gallery">
         <img
           [src]="pictures.image"
