@@ -20,16 +20,17 @@
   // display: none;
 }
 
-#contact{
-  background: url(../../../assets/hotel/contact.svg);
-  position: relative;
-}
-#contact::after{
-  position: absolute;
-  content: "";
-  background: #363636C4;
-  inset: 0;
-}
+// #contact{
+//   background: url(../../../assets/hotel/contact.svg);
+//   position: relative;
+// }
+
+// #contact::after{
+//   position: absolute;
+//   content: "";
+//   background: #363636C4;
+//   inset: 0;
+// }
 
 @media (min-width: 768px) {
   .about-2 .owl-theme .owl-nav{
