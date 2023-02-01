@@ -9,7 +9,7 @@
     <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]" />
     <div>
       <p class="text-[#F23A2E] font-worksans text-base mb-6">About Us</p>
-      <p class="font-playfair text-4xl mb-9 w-[70%]">
+      <p class="font-playfair md:text-4xl text-2xl mb-9 md:w-[70%]">
         Welcome To PreTouch Hotels and Suites
       </p>
       <p class="font-worksans text-base mb-3">
@@ -22,9 +22,13 @@
   </div>
 </section>
 
+<<<<<<< HEAD
 <!-- <section class="md:mt-[230px] mt-5 md:p-12 bg-[#F8F9FA]">
+=======
+<section class="md:mt-[230px] mt-24 md:p-12 bg-[#F8F9FA]">
+>>>>>>> 86b94626e9960a3f99b9e5396ec25554bc82f614
   <div class="mx-auto md:w-[80%] w-[90%]">
-    <p class="flex justify-center mb-16 font-playfair text-3xl">Our Staffs</p>
+    <p class="flex justify-center md:mb-16 mb-5 font-playfair md:text-3xl text-2xl py-9">Our Staffs</p>
 
     <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2">
       <div
@@ -32,11 +36,11 @@
         *ngFor="let staff of HotelStaffs"
       >
         <img [src]="staff.picture" alt="" class="staff" />
-        <div class="mt-6 my-6 text-base font-worksans w-full">
-          <p class="text-center uppercase font-worksans text-2xl mb-4">
+        <div class="md:mt-6 mt-2 md:my-6 my-2 text-base font-worksans w-full">
+          <p class="text-center uppercase font-worksans md:text-2xl md:mb-4 text-lg">
             {{ staff.name }}
           </p>
-          <p class="text-center p-3">{{ staff.description }}</p>
+          <p class="text-center md:p-3 md:text-base text-sm">{{ staff.description }}</p>
         </div>
       </div>
     </div>
@@ -44,42 +48,46 @@
 </section> -->
 
 <section class="mt-12 md:p-12">
-  <div class="mx-auto w-[90%] my-24">
-    <p class="flex justify-center mb-16 font-playfair text-3xl"> Hotel Features </p>
-    <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/swimming.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Swimming Pool</p>
+  <div class="mx-auto md:w-[80%]">
+    <p class="flex justify-center mb-16 font-playfair text-3xl">
+      Hotel Features
+    </p>
+    <div
+      class="grid md:grid-cols-4 sm:grid-cols-2 justify-center md:gap-6 gap-3 w-[90%] mx-auto items-center"
+    >
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/swimming.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Swimming Pool</p>
+      </div>
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/traffic-jam.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Car Parking</p>
+      </div>
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/emergency-exit.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Fire Exit</p>
+      </div>
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/hair-dryer.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Hair Dryer</p>
+      </div>
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/mini-bar.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Minibar</p>
+      </div>
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/drinks.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Drinks</p>
+      </div>
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/car-one.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Car Airport</p>
+      </div>
+      <div class="flex flex-col items-center">
+       <img src="assets/hotel/hotel-teller.svg" alt="">
+       <p class="text-[#F23A2E] font-worksans md:text-lg text-sm">Car Airport</p>
+      </div>
      </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/traffic-jam.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Car Parking</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/emergency-exit.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Fire Exit</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/hair-dryer.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Hair Dryer</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/mini-bar.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Minibar</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/drinks.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Drinks</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/car-one.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/hotel-teller.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
-     </div>
-    </div>
   </div>
 
   <div class="m-0 mt-[120px] p-2 sm:p-2">
