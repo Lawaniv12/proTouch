@@ -24,7 +24,7 @@
     <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2" >
       <div class="shadow-md p-0 " *ngFor="let room of roomCategories">
         <div class="overflow-hidden">
-          <img [src]="room.picture" alt="" class="scale-100 room">
+          <img [src]="room.picture" alt="" class="scale-100 room w-full h-[300px]">
         </div>
         <p class="flex justify-center mt-6 my-6 text-xl font-worksans">{{room.roomName}}</p>
       </div>
@@ -136,7 +136,7 @@
 
 </section>
 
-<div class=" md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-black to-white" id="contact">
+<div class=" md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-[#3C2A21] to-[#1A120B]" id="contact">
   <section
     class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24"
   >
