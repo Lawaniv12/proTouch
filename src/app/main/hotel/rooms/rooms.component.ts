@@ -14,28 +14,41 @@ export class RoomsComponent implements OnInit {
 
   roomCategories = [
     {
+      roomName: 'Inside View',
+      picture: 'assets/hotel/images/pic-1.jpg'
+    },
+    {
+      roomName: 'Side View',
+      picture: 'assets/hotel/images/side-view.jpg'
+    },
+    {
+      roomName: 'Front View',
+      picture: 'assets/hotel/images/front-view.jpg'
+    },
+    {
+      roomName: 'Executive Room',
+      picture: 'assets/hotel/about-us/executive-room.jpg'
+    },
+    {
       roomName: 'Standard Room',
-      picture: 'assets/hotel/hotel-room-1.jpg'
+      picture: 'assets/hotel/about-us/standard-room.jpg'
     },
     {
-      roomName: 'Family Room',
-      picture: 'assets/hotel/hotel-room-2.jpg'
+      roomName: 'Executive Suite',
+      picture: 'assets/hotel/about-us/executive-suite.jpg'
     },
     {
-      roomName: 'Single Room',
-      picture: 'assets/hotel/hotel-room-3.jpg'
+      roomName: 'Royal Suite',
+      picture: 'assets/hotel/about-us/royal-suite.jpg'
     },
     {
-      roomName: 'Delux Room',
-      picture: 'assets/hotel/hotel-room-4.jpg'
+      roomName: 'Open Terrace Bar',
+      picture: 'assets/hotel/about-us/open-terrace-bar.jpg'
     },
     {
-      roomName: 'Luxury Room',
-      picture: 'assets/hotel/hotel-room-5.jpg'
+      roomName: 'Reception',
+      picture: 'assets/hotel/about-us/reception.jpg'
     },
-    {
-      roomName: 'Luxury Room',
-      picture: 'assets/hotel/hotel-room-5.jpg'
-    },
+    
   ]
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-hotel',
@@ -10,8 +11,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class HotelComponent implements OnInit {
 
   constructor() { }
+ 
 
   ngOnInit(): void {
+    this.showWhatsAppLink();
   }
 
   roomCategories = [
@@ -59,6 +62,20 @@ export class HotelComponent implements OnInit {
     }
   ]
 
+  showWhatsAppLink(){
+   const whatsAppContainer = document.querySelector('.whatsAppContainer');
+   const header = document.querySelector('#header') as HTMLElement;
+
+   window.addEventListener('scroll', () => {
+    if  (header && window.scrollY  > header.offsetHeight) {
+      whatsAppContainer?.classList.remove('hidden');
+    }
+    else {
+      whatsAppContainer?.classList.add('hidden')
+    }
+   })
+  }
+
   hotelHeader: OwlOptions = {
     loop: true,
     
@@ -95,4 +112,7 @@ export class HotelComponent implements OnInit {
     },
     nav: true
   }
+
+ 
 }
+

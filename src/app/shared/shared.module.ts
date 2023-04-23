@@ -7,6 +7,7 @@ import { CakeFooterComponent } from './cake-footer/cake-footer.component';
 import { RouterModule } from '@angular/router';
 import { HotelFooterComponent } from './hotel-footer/hotel-footer.component';
 import { HotelNavComponent } from './hotel-nav/hotel-nav.component';
+import { AboutUsComponent } from './modal/about-us/about-us.component';
 
 
 
@@ -17,7 +18,8 @@ import { HotelNavComponent } from './hotel-nav/hotel-nav.component';
     CakeHeaderComponent,
     CakeFooterComponent,
     HotelFooterComponent,
-    HotelNavComponent
+    HotelNavComponent,
+    AboutUsComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { HotelNavComponent } from './hotel-nav/hotel-nav.component';
     CakeHeaderComponent,
     CakeFooterComponent,
     HotelFooterComponent,
-    HotelNavComponent
+    HotelNavComponent,
+    AboutUsComponent
   ]
 })
 export class SharedModule { }
