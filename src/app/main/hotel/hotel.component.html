@@ -1,21 +1,23 @@
-<header class="">
-  <owl-carousel-o [options]="hotelHeader" class="hidden md:block bg-[#f2f5f7]">
-    <ng-container *ngFor="let images of imagesStore">
-      <ng-template carouselSlide [id]="images.id">
-        <div class="md:h-screen h-[90%]">
-          <img src={{images.src}} class="object-cover md:w-full" />
-        </div>
-      </ng-template>
-    </ng-container>
-  </owl-carousel-o>
+<header id="header">
+  <div class="">
+    <owl-carousel-o [options]="hotelHeader" class="hidden md:block bg-[#f2f5f7]">
+      <ng-container *ngFor="let images of imagesStore">
+        <ng-template carouselSlide [id]="images.id">
+          <div class="md:h-screen h-[90%]">
+            <img src={{images.src}} class="object-cover md:w-full" />
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+    
+  </div>
+  <app-header class="block h-[70vh] md:hidden"
+    title="ProTouch Hotel and Suites"
+    subtitle="Welcome to Comfort">
+  </app-header>
   
+  <app-hotel-nav></app-hotel-nav>
 </header>
-<app-header class="block h-[70vh] md:hidden"
-  title="ProTouch Hotel and Suites"
-  subtitle="Welcome to Comfort">
-</app-header>
-
-<app-hotel-nav></app-hotel-nav>
 
 <section class="py-24 bg-[#f2f5f7]">
   <div class="mx-auto md:w-[80%] w-[90%]">
@@ -34,14 +36,17 @@
 
 
 <section class="my-24 font-worksans p-5">
-  <div class="mx-auto flex items-center justify-between gap-12 lg:flex-row flex-col md:px-20">
-    <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]">
-    <div>
-      <p class="text-[#62760C] font-worksans text-xl mb-6"> About Us </p>
+  <div class="mx-auto flex items-center justify-between md:gap-16 lg:flex-row flex-col md:px-20">
+    <div class="relative">
+      <!-- <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]"> -->
+      <img src="assets/hotel/images/pic-1.jpg" alt="" class="w-full">
+      <img src="assets/hotel/images/regular-room.jpg" alt="asset" class="absolute -right-1/4 w-[50%] -bottom-4 border-solid border-white border-4 hidden md:block">
+    </div>
+    <div class="lg:ml-20">
+      <p class="text-[#62760C] font-worksans text-2xl mb-6 my-4"> About Us </p>
       <p class="font-playfair md:text-5xl text-2xl mb-9 lg:w-[70%] w-[90%] text-[#1A120B]"> Welcome To PreTouch Hotels and Suites </p>
       <p class="font-worksans text-base mb-3 w-[80%]">
-        With over 340 Hotels Worldwide, PreTouch Hotel has offered a wide variety of audience accross quality and premium service at a very affordable
-        price.
+        With over 340 Hotels Worldwide, PreTouch Hotel has offered a wide variety of audience accross quality and premium service at a very affordable price.
       </p>
       <p>Manager: <span class="text-[#3C2A21] text-base"> Chimanda Emeka </span></p>
     </div>
@@ -55,7 +60,7 @@
         <div class="">
           <section class="grid grid-cols-1 sm:flex gap-8 items-center md:px-12">
             <div class="sm:w-1/2 md:w-1/4">
-              <img src="assets/hotel/img-5.png" class="w-full" alt="" />
+              <img src="assets/hotel/images/av1.png" class="w-full" alt="" />
             </div>
             <div class="sm:w-1/2 md:w-3/4">
               <h3 class="text-[#62760C] font-semibold ">Testimonials</h3>
@@ -75,7 +80,7 @@
         <div class="">
           <section class="grid grid-cols-1 sm:flex gap-8 items-center md:px-12">
             <div class="sm:w-1/2 md:w-1/4">
-              <img src="assets/hotel/img-5.png" class="w-full" alt="" />
+              <img src="assets/hotel/images/av2.png" class="w-full" alt="" />
             </div>
             <div class="sm:w-1/2 md:w-3/4">
               <h3 class="text-[#62760C] font-semibold">Testimonials</h3>
@@ -155,7 +160,11 @@
     </button>
   </section>
 </div>
-
+<div class="whatsAppContainer hidden fixed bottom-5 right-5 z-50">
+  <a href="whatsapp://send?phone=+2347017909308">
+    <img src="assets/hotel/images/whatsapp-icon.png" alt="WhatsApp Icon" class="w-[40px]">
+  </a>
+</div>
 
 <app-hotel-footer></app-hotel-footer>
 

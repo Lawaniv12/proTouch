@@ -7,7 +7,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RoomsComponent } from './rooms/rooms.component';
 import { AboutHotelComponent } from './about-hotel/about-hotel.component';
 import { ContactHotelComponent } from './contact-hotel/contact-hotel.component';
-import { HotelEventsComponent } from './hotel-events/hotel-events.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 
 
 
@@ -19,13 +20,14 @@ import { HotelEventsComponent } from './hotel-events/hotel-events.component';
     RoomsComponent,
     AboutHotelComponent,
     ContactHotelComponent,
-    HotelEventsComponent
+ 
   ],
   imports: [
     CommonModule,
     HotelRoutingModule,
     SharedModule,
     CarouselModule,
+    MatSlideToggleModule
   
   ]
 })

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { AboutUsComponent } from 'src/app/shared/modal/about-us/about-us.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +10,16 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private matDialog: MatDialog,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      
+      this.showAboutUs()
+    },1500);
   }
 
   date = new Date()
@@ -136,5 +146,17 @@ export class HomeComponent implements OnInit {
       },
     },
     nav: true
+  }
+
+  showAboutUs() {
+    let openDialog = this.matDialog.open(AboutUsComponent, {
+      panelClass: 'custom-class',
+    });
+
+    openDialog.afterClosed().subscribe((res: boolean) => {
+      if (res) {
+        this.router.navigateByUrl('/');
+      }
+    });
   }
 }
