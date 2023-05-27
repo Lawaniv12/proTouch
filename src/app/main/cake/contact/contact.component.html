@@ -1,3 +1,4 @@
+<app-loader></app-loader>
 <app-cake-nav></app-cake-nav>
 <app-cake-header
   heading="Contact Us"
@@ -16,21 +17,24 @@
     class="grid sm:grid-cols-12 gap-12"
   >
     <div class="sm:col-span-8">
-      <form action="" class="flex flex-col gap-4 md:gap-6">
+      <form action="" [formGroup]="contactForm" class="flex flex-col gap-4 md:gap-6">
         <textarea
           name=""
           id=""
+          formControlName="message"
           class="w-full outline-0 border border-[#C9C9C9] border-solid resize-none h-24 md:h-32 p-2 text-sm md:text-base"
           placeholder="Enter message"
         ></textarea>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           <input
             type="text"
+            formControlName="name"
             class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
             placeholder="Enter your name"
           />
           <input
             type="text"
+            formControlName="email"
             class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
             placeholder="Enter your email"
           />
@@ -39,10 +43,11 @@
           type="text"
           name=""
           id=""
+          formControlName="subject"
           class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
           placeholder="Enter subject"
         />
-        <button class="text-[#DAB748] font-light border-solid border border-[#DAB748] w-40 p-3 sm:p-5 hover:bg-[#E44200] hover:text-white">SEND</button>
+        <button class="text-[#DAB748] font-light border-solid border border-[#DAB748] w-40 p-3 sm:p-5 hover:bg-[#E44200] hover:text-white" [disabled]="contactForm.invalid" [ngClass]="{'disabled-button': contactForm.invalid}" (click)="sendCakeContactUs()">SEND</button>
       </form>
     </div>
     <div class="sm:col-span-4 flex flex-col gap-5">

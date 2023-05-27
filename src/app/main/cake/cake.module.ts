@@ -8,6 +8,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductComponent } from './product/product.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactComponent } from './contact/contact.component';
     CommonModule,
     CakeRoutingModule,
     SharedModule,
-    CarouselModule
+    CarouselModule,
+    ReactiveFormsModule
   ]
 })
 export class CakeModule { }
