@@ -21,7 +21,7 @@ export class HotelNavComponent implements OnInit {
         navbar.style.backgroundColor = '#1A120B';
         navbar.style.color = 'white';
       } else {
-        navbar.style.backgroundColor = 'transparent';
+        navbar.style.backgroundColor = '#1A120B';
         navbar.style.color = '#FFFFFF';
       }
     }
