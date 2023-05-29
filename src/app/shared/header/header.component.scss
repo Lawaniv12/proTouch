@@ -2,6 +2,7 @@
   background: url(../../../assets/hotel/images/front-view.jpg);
   width: 100%;
   object-fit: contain;
+  background-size: cover;
 }
 .header-bg::before{
   content: "";
