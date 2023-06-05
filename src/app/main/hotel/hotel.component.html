@@ -1,3 +1,4 @@
+<app-hotel-nav></app-hotel-nav>
 <header id="header">
   <div class="">
     <owl-carousel-o [options]="hotelHeader" class="hidden md:block bg-[#f2f5f7]">
@@ -9,21 +10,19 @@
         </ng-template>
       </ng-container>
     </owl-carousel-o>
-    
+
   </div>
-  <app-header class="block h-[70vh] md:hidden"
-    title="ProTouch Hotel and Suites"
-    subtitle="Welcome to Comfort">
+  <app-header class="block h-[70vh] md:hidden" title="ProTouch Hotel and Suites" subtitle="Welcome to Comfort">
   </app-header>
-  
-  <app-hotel-nav></app-hotel-nav>
+
+
 </header>
 
 <section class="py-24 bg-[#f2f5f7]">
   <div class="mx-auto md:w-[80%] w-[90%]">
     <p class="flex justify-center mb-16 font-playfair text-4xl">Our Rooms</p>
-  
-    <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2" >
+
+    <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2">
       <div class="shadow-md p-0 " *ngFor="let room of roomCategories">
         <div class="overflow-hidden">
           <img [src]="room.picture" alt="" class="scale-100 room w-full h-[300px]">
@@ -40,13 +39,16 @@
     <div class="relative">
       <!-- <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]"> -->
       <img src="assets/hotel/images/pic-1.jpg" alt="" class="w-full">
-      <img src="assets/hotel/images/regular-room.jpg" alt="asset" class="absolute -right-1/4 w-[50%] -bottom-4 border-solid border-white border-4 hidden md:block">
+      <img src="assets/hotel/images/regular-room.jpg" alt="asset"
+        class="absolute -right-1/4 w-[50%] -bottom-4 border-solid border-white border-4 hidden lg:block">
     </div>
-    <div class="lg:ml-20">
+    <div class="lg:ml-28">
       <p class="text-[#62760C] font-worksans text-2xl mb-6 my-4"> About Us </p>
-      <p class="font-playfair md:text-5xl text-2xl mb-9 lg:w-[70%] w-[90%] text-[#1A120B]"> Welcome To PreTouch Hotels and Suites </p>
+      <p class="font-playfair md:text-5xl text-2xl mb-9 lg:w-[70%] w-[90%] text-[#1A120B]"> Welcome To ProTouch Hotels
+        and Suites </p>
       <p class="font-worksans text-base mb-3 w-[80%]">
-        With over 340 Hotels Worldwide, PreTouch Hotel has offered a wide variety of audience accross quality and premium service at a very affordable price.
+        PreTouch Hotel has offered a wide variety of audience accross quality and
+        premium service at a very affordable price.
       </p>
       <p>Manager: <span class="text-[#3C2A21] text-base"> Chimanda Emeka </span></p>
     </div>
@@ -67,11 +69,10 @@
               <h2 class="font-bold text-2xl md:text-3xl w-3/4 my-7 font-playfair">
                 Our Customers Love Us
               </h2>
-              <p class="mb-5 w-3/4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-                officiis ipsum sed placeat? Obcaecati id sit, dolorum qui maxime
-                ex consequatur
-              </p>
+              <q class="mb-5 w-3/4">
+                The elegant decor and serene atmosphere created a relaxing ambiance. My room was luxurious with modern
+                amenities and stunning views.
+              </q>
             </div>
           </section>
         </div>
@@ -85,13 +86,13 @@
             <div class="sm:w-1/2 md:w-3/4">
               <h3 class="text-[#62760C] font-semibold">Testimonials</h3>
               <h2 class="font-bold text-2xl md:text-3xl w-3/4 my-7 font-playfair">
-                Our Customers Love Us
+                What our customers are saying
               </h2>
-              <p class="mb-5 w-3/4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-                officiis ipsum sed placeat? Obcaecati id sit, dolorum qui maxime
-                ex consequatur
-              </p>
+              <q class="mb-5 w-3/4">
+                The staff went above and beyond to ensure my comfort and satisfaction, providing excellent
+                recommendations and assistance. The dining experience was a culinary delight, with a diverse menu and
+                impeccable presentation.
+              </q>
             </div>
           </section>
         </div>
@@ -102,49 +103,47 @@
   <div class="mx-auto w-[90%] my-24">
     <p class="flex justify-center mb-16 font-playfair text-3xl"> Hotel Features </p>
     <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/swimming.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Swimming Pool</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/traffic-jam.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Car Parking</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/emergency-exit.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Fire Exit</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/hair-dryer.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Hair Dryer</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/mini-bar.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Minibar</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/drinks.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Drinks</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/car-one.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
-     </div>
-     <div class="flex flex-col items-center">
-      <img src="assets/hotel/hotel-teller.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
-     </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/swimming.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Swimming Pool</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/traffic-jam.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Car Parking</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/emergency-exit.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Fire Exit</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/hair-dryer.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Hair Dryer</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/mini-bar.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Minibar</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/drinks.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Drinks</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/car-one.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="assets/hotel/hotel-teller.svg" alt="">
+        <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
+      </div>
     </div>
   </div>
 
- 
+
 
 </section>
 
 <div class=" md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-[#3C2A21] to-[#1A120B]" id="contact">
-  <section
-    class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24"
-  >
+  <section class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24">
     <div>
       <h3 class="font-bold text-2xl md:text-5xl text-white mb-2">
         Contact Us now
@@ -153,18 +152,9 @@
         Contact (+234 904 554 221) to book directly or for advice
       </p>
     </div>
-    <button
-      class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#62760C] py-3 px-5 rounded"
-    >
+    <button class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#62760C] py-3 px-5 rounded">
       Contact Us
     </button>
   </section>
 </div>
-<div class="whatsAppContainer hidden fixed bottom-5 right-5 z-50">
-  <a href="whatsapp://send?phone=+2347017909308">
-    <img src="assets/hotel/images/whatsapp-icon.png" alt="WhatsApp Icon" class="w-[40px]">
-  </a>
-</div>
-
 <app-hotel-footer></app-hotel-footer>
-
