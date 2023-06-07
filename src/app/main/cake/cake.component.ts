@@ -22,7 +22,7 @@ export class CakeComponent implements OnInit {
     navSpeed: 700,
     autoplay: true,
     autoplaySpeed: 700,
-    navText: [],
+    navText: [''],
     responsive: {
       0: {
         items: 1
@@ -49,7 +49,7 @@ export class CakeComponent implements OnInit {
     navSpeed: 700,
     autoplay: true,
     autoplaySpeed: 700,
-    navText: [ ],
+    navText: [''],
     responsive: {
       0: {
         items: 1

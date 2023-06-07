@@ -8,6 +8,7 @@ import { RoomsComponent } from './rooms/rooms.component';
 import { AboutHotelComponent } from './about-hotel/about-hotel.component';
 import { ContactHotelComponent } from './contact-hotel/contact-hotel.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,8 +28,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     HotelRoutingModule,
     SharedModule,
     CarouselModule,
-    MatSlideToggleModule
-  
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ]
 })
 export class HotelModule { }
