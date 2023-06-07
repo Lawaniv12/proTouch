@@ -9,21 +9,19 @@
         </ng-template>
       </ng-container>
     </owl-carousel-o>
-    
+
   </div>
-  <app-header class="block h-[70vh] md:hidden"
-    title="ProTouch Hotel and Suites"
-    subtitle="Welcome to Comfort">
+  <app-header class="block h-[70vh] md:hidden" title="ProTouch Hotel and Suites" subtitle="Welcome to Comfort">
   </app-header>
-  
+
   <app-hotel-nav></app-hotel-nav>
 </header>
 
 <section class="py-24 bg-[#f2f5f7]">
   <div class="mx-auto md:w-[80%] w-[90%]">
     <p class="flex justify-center mb-16 font-playfair text-4xl">Our Rooms</p>
-  
-    <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2" >
+
+    <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2">
       <div class="shadow-md p-0 " *ngFor="let room of roomCategories">
         <div class="overflow-hidden">
           <img [src]="room.picture" alt="" class="scale-100 room w-full h-[300px]">
@@ -40,13 +38,16 @@
     <div class="relative">
       <!-- <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]"> -->
       <img src="assets/hotel/images/pic-1.jpg" alt="" class="w-full rounded-lg border-2">
-      <img src="assets/hotel/images/regular-room.jpg" alt="asset" class="absolute -right-1/4 w-[50%] -bottom-4 border-solid border-white border-4 hidden md:block rounded-lg">
+      <img src="assets/hotel/images/regular-room.jpg" alt="asset"
+        class="absolute -right-1/4 w-[50%] -bottom-4 border-solid border-white border-4 hidden md:block rounded-lg">
     </div>
     <div class="lg:ml-20">
       <p class="text-[#62760C] font-worksans text-2xl mb-6 my-4"> About Us </p>
-      <p class="font-playfair md:text-5xl text-2xl mb-9 lg:w-[80%] md:w-[85%] w-[90%] text-[#1A120B]"> Welcome To Complete ProTouch Hotel and Suites </p>
+      <p class="font-playfair md:text-5xl text-2xl mb-9 lg:w-[80%] md:w-[85%] w-[90%] text-[#1A120B]"> Welcome To
+        Complete ProTouch Hotel and Suites </p>
       <p class="font-worksans text-base mb-3 md:w-[80%] w-[90%] text-justify">
-        Complete ProTouch Hotel and Suites is a small oasis tucked away in the bustling city of Lagos, with seventeen (17) guest rooms and three (3) suites.
+        Complete ProTouch Hotel and Suites is a small oasis tucked away in the bustling city of Lagos, with seventeen
+        (17) guest rooms and three (3) suites.
       </p>
     </div>
   </div>
@@ -54,114 +55,102 @@
 
 <section class="my-24 font-worksans p-5">
   <div class="mx-auto flex items-center justify-between md:gap-16 lg:flex-row flex-col md:px-20">
-    <div class="">
-   
-      <p class="font-playfair md:text-5xl text-2xl mb-9 lg:w-[80%] md:w-[85%] w-[90%] text-[#1A120B]"> Lodging </p>
+    <div class="order-1">
+
+      <p class="font-playfair md:text-5xl text-2xl mb-9 lg:w-[80%] md:w-[85%] w-[90%] text-[#1A120B] my-4"> Lodging </p>
       <p class="font-worksans text-base mb-3 md:w-[80%] w-[90%] text-justify">
-        Our rich visitor rooms and suites are faultlessly enhanced in modern plan with clean-lined decorations, well-thought-out lighting and huge windows 
+        Our rich visitor rooms and suites are faultlessly enhanced in modern plan with clean-lined decorations,
+        well-thought-out lighting and huge windows
       </p>
     </div>
-    <div class="relative">
+    <div class="relative md:order-2">
       <!-- <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]"> -->
       <img src="assets/hotel/about-us/reception.jpg" alt="" class="w-full border-2 rounded-lg">
-      <img src="assets/hotel/about-us/royal-suite.jpg" alt="asset" class="absolute -left-1/4 w-[50%] -bottom-4 border-solid border-white border-4 hidden md:block rounded-lg">
+      <img src="assets/hotel/about-us/royal-suite.jpg" alt="asset"
+        class="absolute -left-1/4 w-[50%] -bottom-4 border-solid border-white border-4 hidden md:block rounded-lg">
     </div>
-    
+
   </div>
 </section>
 
-<section class="mt-8 bg-[#F8F9FA] md:p-8">
-  <div class="p-5 sm:p-8 md:p-10 testimonial mx-auto mt-24" id="testimonials">
-    <owl-carousel-o [options]="testimonialsCarousel">
-      <ng-template carouselSlide>
-        <div class="">
-          <section class="grid grid-cols-1 sm:flex gap-8 items-center md:px-12">
-            <div class="sm:w-1/2 md:w-1/4">
-              <img src="assets/hotel/images/av1.png" class="w-full" alt="" />
-            </div>
-            <div class="sm:w-1/2 md:w-3/4">
-              <h3 class="text-[#62760C] font-semibold ">Testimonials</h3>
-              <h2 class="font-bold text-2xl md:text-3xl w-3/4 my-7 font-playfair">
-                Our Customers Love Us
-              </h2>
-              <p class="mb-5 w-3/4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-                officiis ipsum sed placeat? Obcaecati id sit, dolorum qui maxime
-                ex consequatur
-              </p>
-            </div>
-          </section>
-        </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="">
-          <section class="grid grid-cols-1 sm:flex gap-8 items-center md:px-12">
-            <div class="sm:w-1/2 md:w-1/4">
-              <img src="assets/hotel/images/av2.png" class="w-full" alt="" />
-            </div>
-            <div class="sm:w-1/2 md:w-3/4">
-              <h3 class="text-[#62760C] font-semibold">Testimonials</h3>
-              <h2 class="font-bold text-2xl md:text-3xl w-3/4 my-7 font-playfair">
-                Our Customers Love Us
-              </h2>
-              <p class="mb-5 w-3/4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-                officiis ipsum sed placeat? Obcaecati id sit, dolorum qui maxime
-                ex consequatur
-              </p>
-            </div>
-          </section>
-        </div>
-      </ng-template>
-    </owl-carousel-o>
+<section class="mt-8 bg-[#F8F9FA] md:p-8 p-4">
+  
+
+
+  <div class="mx-auto md:w-1/2 sm:w-[90] w-full p-8 mb-8">
+    <h1 class="font-playfair text-3xl my-6 text-center"> Our Functions as Hosts </h1>
+    <p class="font-worksan text-base text-justify leading-8">We care about creating a comfortable, warm and welcoming
+      environment for our guests. Our primary mission is to provide a high standard of service and manage our facilities
+      in such a way that all our guests feel welcomed and cared for. We want to support our guests in the best possible
+      way. If you have any questions, please feel free to contact us. We are committed to a high level of service to our
+      customers which we guarantee through continuous staff training.
+
+    </p>
   </div>
 
-  <div class="mx-auto w-[90%] my-24">
-    <p class="flex justify-center mb-16 font-playfair text-3xl"> Hotel Features </p>
-    <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
-     <div class="flex flex-col items-center">
+</section>
+
+<div class="header-bg md:p-10 p-4 md:py-12 py-4 bg-gradient-to-r from-[#3C2A21] to-[#1A120B]" id="contact">
+  <section class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24">
+    <div class="text-center ">
+      <h3 class="font-bold text-2xl md:text-3xl text-white mb-2">
+        Front Desk Is Available Round The Clock
+      </h3>
+      <p class="text-[#D9D9D9] md:text-lg text-base">
+        We are constantly open, and our front desk personnel are here to assist you 24 hours a day, seven days a week.
+        Whatever you require, we will do our best to offer a satisfactory response.
+      </p>
+    </div>
+
+  </section>
+</div>
+
+
+
+<div class="mx-auto w-[90%] my-24">
+  <p class="flex justify-center mb-16 font-playfair text-3xl"> Hotel Features </p>
+  <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/swimming.svg" alt="">
       <p class="text-[#62760C] font-worksans text-lg">Swimming Pool</p>
-     </div>
-     <div class="flex flex-col items-center">
+    </div>
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/traffic-jam.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Car Parking</p>
-     </div>
-     <div class="flex flex-col items-center">
+      <p class="text-[#62760C] font-worksans text-lg">COMPLIMENTARY ONSITE PARKING</p>
+    </div>
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/emergency-exit.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Fire Exit</p>
-     </div>
-     <div class="flex flex-col items-center">
+      <p class="text-[#62760C] font-worksans text-lg">ROOM SERVICE</p>
+    </div>
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/hair-dryer.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Hair Dryer</p>
-     </div>
-     <div class="flex flex-col items-center">
+      <p class="text-[#62760C] font-worksans text-lg">SERVICE REQUEST</p>
+    </div>
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/mini-bar.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Minibar</p>
-     </div>
-     <div class="flex flex-col items-center">
+      <p class="text-[#62760C] font-worksans text-lg">BAR</p>
+    </div>
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/drinks.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Drinks</p>
-     </div>
-     <div class="flex flex-col items-center">
+      <p class="text-[#62760C] font-worksans text-lg">MEETING SPACE</p>
+    </div>
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/car-one.svg" alt="">
       <p class="text-[#62760C] font-worksans text-lg">Car Airport</p>
-     </div>
-     <div class="flex flex-col items-center">
+    </div>
+    <div class="flex flex-col items-center">
       <img src="assets/hotel/hotel-teller.svg" alt="">
       <p class="text-[#62760C] font-worksans text-lg">ROOM SERVICE</p>
-     </div>
     </div>
   </div>
+</div>
 
- 
 
-</section>
+
+
 
 <div class=" md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-[#3C2A21] to-[#1A120B]" id="contact">
-  <section
-    class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24"
-  >
+  <section class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24">
     <div>
       <h3 class="font-bold text-2xl md:text-5xl text-white mb-2">
         Contact Us now
@@ -170,9 +159,7 @@
         Contact (+234 904 554 221) to book directly or for advice
       </p>
     </div>
-    <button
-      class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#62760C] py-3 px-5 rounded"
-    >
+    <button class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#62760C] py-3 px-5 rounded">
       Contact Us
     </button>
   </section>
@@ -184,4 +171,3 @@
 </div>
 
 <app-hotel-footer></app-hotel-footer>
-

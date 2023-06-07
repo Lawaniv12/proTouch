@@ -1,8 +1,12 @@
 .header-bg{
-  background: url(../../../assets/hotel/images/front-view.jpg);
+  background: url(../../../assets/hotel/about-us/reception.jpg);
   width: 100%;
   object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .header-bg::before{
   content: "";
   position: absolute;
