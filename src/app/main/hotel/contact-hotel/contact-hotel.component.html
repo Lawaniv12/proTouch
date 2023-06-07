@@ -1,31 +1,34 @@
+<app-loader></app-loader>
 <app-hotel-nav></app-hotel-nav>
-
 <app-header 
 title = 'Get in Touch'
 subtitle="CHAT WITH US">
 </app-header>
 
-<section class="bg-white py-14 px-6 sm:py-20 sm:px-10 md:py-28 md:px-16">
+<section class="bg-blue py-14 px-6 sm:py-20 sm:px-10 md:py-28 md:px-16">
   <h4 class="text-lg md:text-xl lg:text-2xl font-medium my-4">Get in Touch</h4>
   <div
     class="grid sm:grid-cols-12 gap-12"
   >
     <div class="sm:col-span-8">
-      <form action="" class="flex flex-col gap-4 md:gap-6">
+      <form action="" [formGroup]="contactForm" class="flex flex-col gap-4 md:gap-6">
         <textarea
           name=""
           id=""
+          formControlName="message"
           class="w-full outline-0 border border-[#C9C9C9] border-solid resize-none h-24 md:h-32 p-2 text-sm md:text-base"
           placeholder="Enter message"
         ></textarea>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           <input
             type="text"
+            formControlName="name"
             class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
             placeholder="Enter your name"
           />
           <input
             type="text"
+            formControlName="email"
             class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
             placeholder="Enter your email"
           />
@@ -34,10 +37,11 @@ subtitle="CHAT WITH US">
           type="text"
           name=""
           id=""
+          formControlName="subject"
           class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
           placeholder="Enter subject"
         />
-        <button class="text-[#62760C] font-light border-solid border border-[#62760C] w-40 p-3 sm:p-5 hover:bg-[#62760C] hover:text-white">SEND</button>
+        <button class="text-[#62760C] font-light border-solid border border-[#62760C] w-40 p-3 sm:p-5 hover:bg-[#62760C] hover:text-white" [disabled]="contactForm.invalid" [ngClass]="{'disabled-button': contactForm.invalid}" (click)="sendHotelContactUs()">SEND</button>
       </form>
     </div>
     <div class="sm:col-span-4 flex flex-col gap-5">

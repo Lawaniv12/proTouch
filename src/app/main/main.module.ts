@@ -8,6 +8,7 @@ import { MainComponent } from './main.component';
 import { HomeComponent } from './home/home.component';
 
 
+
 @NgModule({
   declarations: [
     MainComponent,
@@ -18,7 +19,7 @@ import { HomeComponent } from './home/home.component';
     MainRoutingModule,
     SharedModule,
     CarouselModule,
-    
+ 
   ]
 })
 export class MainModule { }

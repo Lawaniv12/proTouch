@@ -1,5 +1,5 @@
 <header
-  class="p-6 md:py-10 md:px-16 font-worksans cursor-pointer px-3 py-3 fixed top-0 left-0 right-0 z-30 h-[56px] md:h-[71px] lg:h-[79px] text-white navbar flex items-center">
+  class="p-6 md:py-10 md:px-16 font-worksans cursor-pointer px-3 py-3 sticky top-0 left-0 right-0 z-30 h-[56px] md:h-[71px] lg:h-[79px] text-white navbar flex items-center bg-[#1A120B]">
   <nav class="flex justify-between w-full items-center">
     <div routerLink="/main/">
       <img src="../assets/hotel/protouch-hotel-logo.png" alt="" class="md:w-14 w-8">
@@ -10,8 +10,7 @@
       </p>
       <p routerLink="/hotel/rooms" routerLinkActive="active-nav" class="hover:text-[#D5CEA3]"
       >ROOMS</p>
-      <p routerLink="/hotel/hotel-events" routerLinkActive="active-nav" class="hover:text-[#D5CEA3]">EVENTS</p>
-      <p routerLink="/hotel/about-hotel" routerLinkActive="active-nav" class="hover:text-[#D5CEA3]">ABOUT US</p>
+          <p routerLink="/hotel/about-hotel" routerLinkActive="active-nav" class="hover:text-[#D5CEA3]">ABOUT US</p>
       <p routerLink="/hotel/contact" routerLinkActive="active-nav" class="hover:text-[#D5CEA3]">CONTACT US</p>
     </div>
     <div class="md:hidden cursor-pointer text-white text-2xl" (click)="showNavToggle()">
