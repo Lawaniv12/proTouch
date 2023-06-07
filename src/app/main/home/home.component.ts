@@ -26,34 +26,35 @@ export class HomeComponent implements OnInit {
   imagesStore = [
     {
       id: '1',
-      src: 'assets/home/header-1.png'
+      src: 'assets/hotel/about-us/lounge.jpg'
 
     },
     {
       id: '2',
-      src: 'assets/home/header-1.png'
+      src: 'assets/hotel/about-us/front-view.jpg'
 
     },
     {
       id: '3',
-      src: 'assets/home/header-1.png'
+      src: 'assets/hotel/about-us/reception.jpg'
 
-    }
+    },
+ 
   ]
   imagesStore2 = [
     {
       id: '1',
-      src: 'assets/home/header-2.png'
+      src: 'assets/cake/footer-cake-1.svg'
 
     },
     {
       id: '2',
-      src: 'assets/home/header-2.png'
+      src: 'assets/cake/footer-cake-2.svg'
 
     },
     {
       id: '3',
-      src: 'assets/home/header-2.png'
+      src: 'assets/cake/footer-cake-3.svg'
 
     }
   ]

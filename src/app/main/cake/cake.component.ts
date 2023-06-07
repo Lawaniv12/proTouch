@@ -22,7 +22,7 @@ export class CakeComponent implements OnInit {
     navSpeed: 700,
     autoplay: true,
     autoplaySpeed: 700,
-    navText: ['<div class="absolute -left-5 top-1/2 -translate-y-1/2"><img src="assets/icons/left.png" class="w-full"></img></div>', '<div  class="absolute -right-5 top-1/2 -translate-y-1/2"><img src="assets/icons/right.png" class="w-full"></img></div>'],
+    navText: [],
     responsive: {
       0: {
         items: 1
@@ -49,7 +49,7 @@ export class CakeComponent implements OnInit {
     navSpeed: 700,
     autoplay: true,
     autoplaySpeed: 700,
-    navText: ['<div class="absolute -left-5 top-1/2 -translate-y-1/2"><img src="assets/icons/left.png" class="w-full"></img></div>', '<div  class="absolute -right-5 top-1/2 -translate-y-1/2"><img src="assets/icons/right.png" class="w-full"></img></div>'],
+    navText: [ ],
     responsive: {
       0: {
         items: 1
