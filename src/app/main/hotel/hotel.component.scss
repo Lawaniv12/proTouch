@@ -50,10 +50,10 @@
   background-position: center;
 }
 
-.header-bg::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.897);
-  z-index: 0;
-}
+// .header-bg::before{
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background: rgba(0, 0, 0, 0.897);
+//   z-index: 0;
+// }
