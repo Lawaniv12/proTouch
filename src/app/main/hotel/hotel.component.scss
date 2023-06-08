@@ -40,3 +40,20 @@
       display: block;
   }
 }
+
+.header-bg{
+  background: url(../../../assets/hotel/about-us/royal-suite.jpg);
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// .header-bg::before{
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background: rgba(0, 0, 0, 0.897);
+//   z-index: 0;
+// }

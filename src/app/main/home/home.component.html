@@ -6,8 +6,8 @@
       <owl-carousel-o [options]="hotelHeader">
         <ng-container *ngFor="let images of imagesStore">
           <ng-template carouselSlide [id]="images.id">
-            <div class="h-full">
-              <img src={{images.src}} class="object-cover" />
+            <div class="h-full image-container">
+              <img src={{images.src}} class="object-cover h-[100vh]"/>
             </div>
           </ng-template>
         </ng-container>
@@ -35,8 +35,8 @@
       <owl-carousel-o [options]="cakeHeader">
         <ng-container *ngFor="let images of imagesStore2">
           <ng-template carouselSlide [id]="images.id">
-            <div class="h-full">
-              <img src={{images.src}} class="object-cover" />
+            <div class="h-full image-container">
+              <img src={{images.src}} class="object-cover h-[100vh]" />
             </div>
           </ng-template>
         </ng-container>
