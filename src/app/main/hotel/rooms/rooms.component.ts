@@ -42,12 +42,27 @@ export class RoomsComponent implements OnInit {
       picture: 'assets/hotel/about-us/royal-suite.jpg'
     },
     {
-      roomName: 'Open Terrace Bar',
-      picture: 'assets/hotel/about-us/open-terrace-bar.jpg'
+      roomName: 'Standard Suite',
+      picture: 'assets/hotel/about-us/standard-suite.jpeg',
     },
     {
       roomName: 'Reception',
       picture: 'assets/hotel/about-us/reception.jpg'
+    },
+    {
+      roomName: 'Lounge',
+      picture: 'assets/hotel/about-us/lounge.jpg',
+     
+    },
+    {
+      roomName: 'Open Space',
+      picture: 'assets/hotel/about-us/open-space.jpeg',
+     
+    },
+    {
+      roomName: 'Open Terrace Bar',
+      picture: 'assets/hotel/about-us/open-terrace-bar.jpg',
+     
     },
     
   ]

@@ -20,28 +20,61 @@ export class HotelComponent implements OnInit {
   roomCategories = [
     {
       roomName: 'Executive Room',
-      picture: 'assets/hotel/about-us/executive-room.jpg'
+      picture: 'assets/hotel/about-us/executive-room.jpg',
+      roomPrice: 'N15,000.00',
+      unit: 'Per Night'
     },
     {
       roomName: 'Standard Room',
-      picture: 'assets/hotel/about-us/standard-room.jpg'
+      picture: 'assets/hotel/about-us/standard-room.jpg',
+      roomPrice: 'N12,000.00',
+      unit: 'Per Night'
     },
     {
       roomName: 'Executive Suite',
-      picture: 'assets/hotel/about-us/executive-suite.jpg'
+      picture: 'assets/hotel/about-us/executive-suite.jpg',
+      roomPrice: 'N30,000.00',
+      unit: 'Per Night'
     },
     {
       roomName: 'Royal Suite',
-      picture: 'assets/hotel/about-us/royal-suite.jpg'
+      picture: 'assets/hotel/about-us/royal-suite.jpg',
+      roomPrice: 'N30,000.00',
+      unit: 'Per Night'
+    },
+    {
+      roomName: 'Standard Suite',
+      picture: 'assets/hotel/about-us/standard-suite.jpeg',
+      roomPrice: 'N25,000.00',
+      unit: 'Per Night'
+    },
+    
+  ]
+
+  spaceCategories = [
+    {
+      roomName: 'Lounge',
+      picture: 'assets/hotel/about-us/lounge.jpg',
+      firstPrice: 'N70,000.00',
+      firstUnit: '6 Hours',
+      secondPrice: 'N120,000.00',
+      secondUnit: ' 12 Hours',
+    },
+    {
+      roomName: 'Open Space',
+      picture: 'assets/hotel/about-us/open-space.jpeg',
+      firstPrice: 'N30,000.00',
+      firstUnit: '6 Hours',
+      secondPrice: 'N50,000.00',
+      secondUnit: ' 12 Hours',
     },
     {
       roomName: 'Open Terrace Bar',
-      picture: 'assets/hotel/about-us/open-terrace-bar.jpg'
+      picture: 'assets/hotel/about-us/open-terrace-bar.jpg',
+      free: 'Free',
+      condition: 'Only available for birthday parties. But all foods and drinks must be purchased from the hotel.'
     },
-    {
-      roomName: 'Reception',
-      picture: 'assets/hotel/about-us/reception.jpg'
-    },
+  
   ]
 
   imagesStore = [
