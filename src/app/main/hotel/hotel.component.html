@@ -12,27 +12,64 @@
     </owl-carousel-o>
 
   </div>
-  <app-header class="block h-[70vh] md:hidden" title="ProTouch Hotel and Suites" subtitle="Welcome to Comfort">
+  <app-header class="block h-[50vh] md:hidden" title="ProTouch Hotel and Suites" subtitle="Welcome to Comfort">
   </app-header>
 
 </header>
 
-<section class="py-24 bg-[#f2f5f7]">
+<section class="md:py-32 py-8 bg-[#f2f5f7]">
   <div class="mx-auto md:w-[80%] w-[90%]">
-    <p class="flex justify-center mb-16 font-playfair text-4xl">Our Rooms</p>
+    <p class="flex justify-center mb-16 font-playfair md:text-3xl text-xl font-bold">Our Accomodation</p>
 
     <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2">
       <div class="shadow-md p-0 " *ngFor="let room of roomCategories">
         <div class="overflow-hidden">
           <img [src]="room.picture" alt="" class="scale-100 room w-full h-[300px]">
         </div>
-        <p class="flex justify-center mt-6 my-6 text-xl font-worksans">{{room.roomName}}</p>
+        <div class="text-center font-worksans">
+          <p class="mt-6 text-xl font-worksans">{{room.roomName}}</p>
+          <p class="mt-2 font-bold">{{room.roomPrice}}</p>
+          <p class="mb-4 text-sm">{{room.unit}}</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="my-24 font-worksans p-5">
+<section class="md:py-32 py-8 bg-[#f2f5f7]">
+  <div class="mx-auto md:w-[80%] w-[90%]">
+    <p class="flex justify-center mb-16 font-playfair md:text-3xl text-xl font-bold">Space for Meetings/Events</p>
+
+    <div class="grid lg:grid-cols-3 gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2">
+      <div class="shadow-md p-0 " *ngFor="let room of spaceCategories">
+        <div class="overflow-hidden">
+          <img [src]="room.picture" alt="" class="scale-100 room w-full h-[300px]">
+        </div>
+        <div class="text-center font-worksans px-2">
+          <p class="mt-6 text-xl">{{room.roomName}}</p>
+          <p class="font-bold mb-2 ">
+            {{room.free}}
+          </p>
+          <p class="text-sm ">
+            {{room.condition}}
+          </p>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="flex flex-col">
+              <div class="mt-2 text-base">{{room.firstUnit}}</div>
+              <p class="mb-4 text-sm  font-bold">{{room.firstPrice}}</p>
+            </div>
+            <div class="flex flex-col">
+              <div class="mt-2">{{room.secondUnit}}</div>
+              <p class="mb-4 text-sm  font-bold">{{room.secondPrice}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="md:my-32 my-8 font-worksans p-5">
   <div class="mx-auto flex items-center justify-between md:gap-16 lg:flex-row flex-col md:px-20">
     <div class="relative">
       <!-- <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]"> -->
@@ -52,7 +89,7 @@
   </div>
 </section>
 
-<section class="my-24 font-worksans p-5">
+<section class="md:my-32 my-8 font-worksans p-5">
   <div class="mx-auto flex items-center justify-between md:gap-16 lg:flex-row flex-col md:px-20">
     <div class="order-1">
 
@@ -76,7 +113,7 @@
   
 
 
-  <div class="mx-auto md:w-1/2 sm:w-[90] w-full p-8 mb-8">
+  <div class="mx-auto md:w-1/2 sm:w-[90] w-full p-8 md:my-32 my-8">
     <h1 class="font-playfair text-3xl my-6 text-center"> Our Functions as Hosts </h1>
     <p class="font-worksans text-base text-justify leading-8">We care about creating a comfortable, warm and welcoming
       environment for our guests. Our primary mission is to provide a high standard of service and manage our facilities
@@ -89,7 +126,7 @@
 
 </section>
 
-<div class="header-bg md:p-10 p-4 md:py-12 py-4 bg-gradient-to-r from-[#3C2A21] to-[#1A120B]" id="contact">
+<div class="header-bg md:p-10 p-4 md:py-12 py-4 bg-gradient-to-r from-[#3C2A21] to-[#1A120B] md:my-32" id="contact">
   <section class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24 py-20">
     <div class="text-center ">
       <h3 class="font-bold text-2xl md:text-3xl text-white mb-2 font-playfair">
@@ -109,31 +146,31 @@
   <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
     <div class="flex flex-col items-center">
       <img src="assets/hotel/restaurant.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Restaurant</p>
+      <p class="text-[#62760C] font-worksans md:text-base text-sm">Restaurant</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/traffic-jam.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Complimentary Onsite Parking</p>
+      <p class="text-[#62760C] font-worksans md:text-base text-sm">Complimentary Onsite Parking</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/rooms-service.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Room Service</p>
+      <p class="text-[#62760C] font-worksans md:text-base text-sm">Room Service</p>
     </div>
      <div class="flex flex-col items-center">
       <img src="assets/hotel/mini-bar.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Bar</p>
+      <p class="text-[#62760C] font-worksans md:text-base text-sm">Bar</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/meeting.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Meeting Space</p>
+      <p class="text-[#62760C] font-worksans md:text-base text-sm">Meeting Space</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/housekeeping.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Housekeeping</p>
+      <p class="text-[#62760C] font-worksans md:text-base text-sm">Housekeeping</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/service-request.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Service Request</p>
+      <p class="text-[#62760C] font-worksans md:text-base text-sm whitespace-nowrap">Service Request</p>
     </div>
   </div>
 </div>
@@ -146,7 +183,7 @@
         Contact Us now
       </h3>
       <p class="text-[#D9D9D9] text-lg font-worksans">
-        Contact (+234 904 554 221) to book directly or for advice
+        Contact (+234 904 331 3214) to book directly or for advice
       </p>
     </div>
     <button class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#62760C] py-3 px-5 rounded">

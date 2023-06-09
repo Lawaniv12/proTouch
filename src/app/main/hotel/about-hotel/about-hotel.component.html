@@ -2,7 +2,7 @@
 
 <app-header title="About Us" subtitle="Hotel Suites and Resort"> </app-header>
 
-<section class="my-24 font-worksans p-5">
+<section class="md:my-32 my-8 font-worksans p-5">
   <div class="mx-auto flex items-center justify-between md:gap-16 lg:flex-row flex-col md:px-20">
     <div class="relative">
       <!-- <img src="assets/hotel/about-us-pic.png" alt="" class="w-[100%]"> -->
@@ -22,7 +22,7 @@
   </div>
 </section>
 
-<section class="my-24 font-worksans p-5">
+<section class="md:my-32 my-8 font-worksans p-5">
   <div class="mx-auto flex items-center justify-between md:gap-16 lg:flex-row flex-col md:px-20">
     <div class="order-1">
 
@@ -46,7 +46,7 @@
   
 
 
-  <div class="mx-auto md:w-1/2 sm:w-[90] w-full p-8 mb-8">
+  <div class="mx-auto md:w-1/2 sm:w-[90] w-full p-8 md:my-32 my-8">
     <h1 class="font-playfair text-3xl my-6 text-center"> Our Functions as Hosts </h1>
     <p class="font-worksans text-base text-justify leading-8">We care about creating a comfortable, warm and welcoming
       environment for our guests. Our primary mission is to provide a high standard of service and manage our facilities
@@ -74,58 +74,59 @@
   </section>
 </div>
 
-<div class="mx-auto w-[90%] my-24">
+<div class="mx-auto w-[90%] md:my-32 my-8">
   <p class="flex justify-center mb-16 font-playfair md:text-3xl text-xl"> Hotel Features </p>
   <div class="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-6 gap-3 mx-auto items-center">
     <div class="flex flex-col items-center">
       <img src="assets/hotel/restaurant.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Restaurant</p>
+      <p class="text-[#62760C] font-worksans md:text-lg text-sm">Restaurant</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/traffic-jam.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Complimentary Onsite Parking</p>
+      <p class="text-[#62760C] font-worksans md:text-lg text-sm">Complimentary Onsite Parking</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/rooms-service.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Room Service</p>
+      <p class="text-[#62760C] font-worksans md:text-lg text-sm">Room Service</p>
     </div>
      <div class="flex flex-col items-center">
       <img src="assets/hotel/mini-bar.svg" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Bar</p>
+      <p class="text-[#62760C] font-worksans md:text-lg text-sm">Bar</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/meeting.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Meeting Space</p>
+      <p class="text-[#62760C] font-worksans md:text-lg text-sm">Meeting Space</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/housekeeping.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Housekeeping</p>
+      <p class="text-[#62760C] font-worksans md:text-lg text-sm">Housekeeping</p>
     </div>
     <div class="flex flex-col items-center">
       <img src="assets/hotel/service-request.png" alt="">
-      <p class="text-[#62760C] font-worksans text-lg">Service Request</p>
+      <p class="text-[#62760C] font-worksans md:text-lg text-sm whitespace-nowrap">Service Request</p>
     </div>
+   
   </div>
 </div>
 
-<div class="mx-auto w-[90%] my-24 md:w-fit">
+<div class="mx-auto w-[90%] md:my-32 my-16 md:w-fit">
  <div class="text-center p-6 gap-2 mb-4">
   <h1 class="font-playfair md:text-3xl text-xl text-center mb-4">Very Important Hotel Information</h1>
   <p class="font-worksans"> Every other information you need to know about our policies and customer relations</p>
  </div>
-  <div class="flex gap-10 flex-col md:flex-row">
+  <div class="grid md:grid-cols-3 gap-10 md:p-8">
     
-    <div class="flex gap-10">
+    <div class="flex gap-10 max:w-[30%]">
       <div class="border-2 rounded-lg p-7">
-        <p class="font-worksans md:text-xl text-lg text-[#154176] py-4 font-bold mb-4"> Hotel Information  </p>
+        <p class="font-worksans md:text-xl text-lg  py-4 font-bold mb-4"> Hotel Information  </p>
         <div class="flex gap-4 font-worksans ">
           <img src="assets/hotel/checkin.png" alt="" class="w-6 h-6">
           <div class="">
             <div class="md:gap-4 gap-2 grid grid-cols-2 ">
-              <span class=""> Check In: </span><span class="font-bold"> 3.00PM </span> 
+              <span class=""> Check In: </span><span class="font-bold"> 3:00 pm </span> 
              </div>
              <div class="md:gap-4 gap-2 grid grid-cols-2">
-               <span class=""> Check Out: </span> <span class="font-bold ">12.00NOON</span>    
+               <span class=""> Check Out: </span> <span class="font-bold "> 12:00 Noon </span>    
              </div>
           </div>
         </div>
@@ -133,8 +134,8 @@
         <div class="flex gap-4 font-worksans mt-6">
           <img src="assets/hotel/pets.png" alt="" class="w-6 h-6">
           <div class="">
-            <div class="gap-4 flex">
-              <span class="">Pets Policy:</span><span class="font-bold flex-1"> Pets are not Allowed</span> 
+            <div class="md:gap-4 gap-2 grid grid-cols-2">
+              <span class="">Pets Policy:</span><span class="font-bold "> Pets are not Allowed</span> 
              </div>
            
           </div>
@@ -143,8 +144,8 @@
         <div class="flex gap-4 font-worksans mt-6">
           <img src="assets/hotel/payments.png" alt="" class="w-6 h-6">
           <div class="">
-            <div class="gap-4 flex">
-              <span class="">Payments:</span><span class="font-bold flex-1"> Accepts POS and Cash</span> 
+            <div class="md:gap-4 gap-2 grid grid-cols-2">
+              <span class="">Payments:</span><span class="font-bold"> Accepts POS and Cash</span> 
              </div>
            
           </div>
@@ -153,8 +154,8 @@
         <div class="flex gap-4 font-worksans mt-6">
           <img src="assets/hotel/language.png" alt="" class="w-6 h-6">
           <div class="">
-            <div class="gap-4 flex">
-              <span class="">Languages Spoken By Staff: </span><span class="font-bold flex-1"> English and Yoruba</span> 
+            <div class="md:gap-4 gap-2 grid grid-cols-2">
+              <span class="">Languages Spoken By Staff: </span><span class="font-bold"> English and Yoruba</span> 
              </div>
            
           </div>
@@ -162,23 +163,24 @@
       </div>
       
     </div>
-    <div class="flex gap-10 max-w-[560px]">
+    
       <div class="border-2 rounded-lg p-7 font-worksans">
-        <p class=" md:text-xl text-lg text-[#154176] py-4 font-bold mb-4"> Social Media  </p>
+        <p class=" md:text-xl text-lg py-4 font-bold mb-4"> Social Media  </p>
         <p class="py-3">Stay connected with our online activities. Follow and send a direct message to our Instagram. Click on the icon below</p>
         <a href="https://www.instagram.com/protouchhotelsandsuites/" >
           <img src="assets/icons/instagram.png" alt="" class="w-8" />
         </a>
-       
-  
-    
+          
       </div>
+     
       
+    
+    <div class="border-2 rounded-lg p-7 font-worksans max:w-[30%]">
+      <p class=" md:text-xl text-lg py-4 font-bold mb-4"> Accomodation Policy  </p>
+      <p class="py-3">All users of our spaces are expected to deposit a refundable N20,000.00 for damages. </p>
+         
     </div>
   </div>
 </div>
-
-
-
 
 <app-hotel-footer></app-hotel-footer>

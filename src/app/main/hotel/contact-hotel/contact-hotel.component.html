@@ -5,84 +5,86 @@ title = 'Get in Touch'
 subtitle="CHAT WITH US">
 </app-header>
 
-<section class="bg-blue py-14 px-6 sm:py-20 sm:px-10 md:py-28 md:px-16">
-  <h4 class="text-lg md:text-xl lg:text-2xl font-medium my-4">Get in Touch</h4>
-  <div
-    class="grid sm:grid-cols-12 gap-12"
-  >
-    <div class="sm:col-span-8">
-      <form action="" [formGroup]="contactForm" class="flex flex-col gap-4 md:gap-6">
-        <textarea
-          name=""
-          id=""
-          formControlName="message"
-          class="w-full outline-0 border border-[#C9C9C9] border-solid resize-none h-24 md:h-32 p-2 text-sm md:text-base"
-          placeholder="Enter message"
-        ></textarea>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-          <input
-            type="text"
-            formControlName="name"
-            class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
-            placeholder="Enter your name"
-          />
-          <input
-            type="text"
-            formControlName="email"
-            class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
-            placeholder="Enter your email"
-          />
-        </div>
-        <input
-          type="text"
-          name=""
-          id=""
-          formControlName="subject"
-          class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
-          placeholder="Enter subject"
-        />
-        <button class="text-[#62760C] font-light border-solid border border-[#62760C] w-40 p-3 sm:p-5 hover:bg-[#62760C] hover:text-white" [disabled]="contactForm.invalid" [ngClass]="{'disabled-button': contactForm.invalid}" (click)="sendHotelContactUs()">SEND</button>
-      </form>
-    </div>
-    <div class="sm:col-span-4 flex flex-col gap-5">
-        <div class="flex items-center gap-3">
-            <img src="assets/cake/contact/address-icon.svg" class="w-7 block" alt="">
-            <div class="text-sm md:text-base font-light">
-                <p class="leading-6">No 12 Shagamu Street <br> Rosemead, CA 1290</p>
-            </div>
-        </div>
-        <div class="flex items-center gap-3">
-            <img src="assets/cake/contact/phone-icon.svg" class="w-7 block" alt="">
-            <div class="text-sm md:text-base font-light">
-                <p class="leading-6">+234 90 55 232 942 22 <br> Mon to Fri 9am to 6pm</p>
-            </div>
-        </div>
-        <div class="flex items-center gap-3">
-            <img src="assets/cake/contact/email-icon.svg" class="w-7 block" alt="">
-            <div class="text-sm md:text-base font-light">
-                <p class="leading-6">support@protouch.com <br> Send us your query anytime!</p>
-            </div>
-        </div>
-    </div>
-  </div>
-</section>
-<div class=" md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-[#3C2A21] to-[#1A120B]" id="contact">
-  <section
-    class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24"
-  >
-    <div>
-      <h3 class="font-bold text-2xl md:text-5xl text-white mb-2">
-        Contact Us now
-      </h3>
-      <p class="text-[#D9D9D9] text-lg">
-        Contact (+234 904 554 221) to book directly or for advice
-      </p>
-    </div>
-    <button
-      class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#62760C] py-3 px-5 rounded"
+<div class="bg-[#D5CEA3]">
+  <section class="bg-blue py-14 px-6 sm:py-20 sm:px-10 md:py-28 md:px-16 ">
+    <h4 class="text-lg md:text-xl lg:text-2xl font-medium my-4">Get in Touch</h4>
+    <div
+      class="grid sm:grid-cols-12 gap-12"
     >
-      Contact Us
-    </button>
+      <div class="sm:col-span-8">
+        <form action="" [formGroup]="contactForm" class="flex flex-col gap-4 md:gap-6">
+          <textarea
+            name=""
+            id=""
+            formControlName="message"
+            class="w-full outline-0 border border-[#C9C9C9] border-solid resize-none h-24 md:h-32 p-2 text-sm md:text-base"
+            placeholder="Enter message"
+          ></textarea>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <input
+              type="text"
+              formControlName="name"
+              class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
+              placeholder="Enter your name"
+            />
+            <input
+              type="text"
+              formControlName="email"
+              class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
+              placeholder="Enter your email"
+            />
+          </div>
+          <input
+            type="text"
+            name=""
+            id=""
+            formControlName="subject"
+            class="w-full outline-0 border border-[#C9C9C9] border-solid p-2 text-sm md:text-base"
+            placeholder="Enter subject"
+          />
+          <button class="text-[#62760C] font-light border-solid border border-[#62760C] w-40 p-3 sm:p-5 hover:bg-[#62760C] hover:text-white" [disabled]="contactForm.invalid" [ngClass]="{'disabled-button': contactForm.invalid}" (click)="sendHotelContactUs()">SEND</button>
+        </form>
+      </div>
+      <div class="sm:col-span-4 flex flex-col gap-5">
+          <div class="flex items-center gap-3">
+              <img src="assets/cake/contact/address-icon.svg" class="w-7 block" alt="">
+              <div class="text-sm md:text-base font-light">
+                  <p class="leading-6">20/22 ABIODUN OLAJIRE STREET, EWU OWA,OPP <br> FOMMON FILLING STATION, GBERIGBE,IKORODU, LAGOS</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-3">
+              <img src="assets/cake/contact/phone-icon.svg" class="w-7 block" alt="">
+              <div class="text-sm md:text-base font-light">
+                  <p class="leading-6">+234 904 331 3214 <br> Mon to Fri   3:00 pm to 12:00 Noon</p>
+              </div>
+          </div>
+          <div class="flex items-center gap-3">
+              <img src="assets/cake/contact/email-icon.svg" class="w-7 block" alt="">
+              <div class="text-sm md:text-base font-light">
+                  <p class="leading-6">support@protouch.com <br> Send us your query anytime!</p>
+              </div>
+          </div>
+      </div>
+    </div>
   </section>
+  <div class=" md:p-10 p-4 md:py-12 py-4 mt-24 bg-gradient-to-r from-[#3C2A21] to-[#1A120B]" id="contact">
+    <section
+      class="flex flex-col sm:flex-row gap-10 md:items-center justify-between relative z-10 md:px-24"
+    >
+      <div>
+        <h3 class="font-bold text-2xl md:text-5xl text-white mb-2">
+          Contact Us now
+        </h3>
+        <p class="text-[#D9D9D9] text-lg">
+          Contact (+234 904 554 221) to book directly or for advice
+        </p>
+      </div>
+      <button
+        class="text-[#FFFEFE] w-40 cursor-pointer text-center bg-[#62760C] py-3 px-5 rounded"
+      >
+        Contact Us
+      </button>
+    </section>
+  </div>
+  <app-hotel-footer></app-hotel-footer>
 </div>
-<app-hotel-footer></app-hotel-footer>
