@@ -1,0 +1,29 @@
+.bg-header{
+  position: relative;
+  width: 100%;
+  
+}
+
+.bg-image {
+  background-image: url(../../../../assets/home/logo.png);
+  opacity: 0.3;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.926);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.bg-content {
+  position: relative;
+  z-index: 1;
+}
