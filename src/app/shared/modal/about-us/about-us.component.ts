@@ -20,10 +20,10 @@ export class AboutUsComponent implements OnInit {
   }
   
   close() {
-    this.matDialogRef.close(false);
+    this.matDialogRef.close();
   }
 
   confirm() {
-   this.matDialogRef.close(true) 
+   this.matDialogRef.close() 
   }
 }

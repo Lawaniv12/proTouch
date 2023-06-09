@@ -26,12 +26,12 @@ export class HomeComponent implements OnInit {
   imagesStore = [
     {
       id: '1',
-      src: 'assets/hotel/about-us/lounge.jpg'
+      src: 'assets/hotel/about-us/reception.jpg'
 
     },
     {
       id: '2',
-      src: 'assets/hotel/about-us/front-view.jpg'
+      src: 'assets/hotel/about-us/reception.jpg'
 
     },
     {
@@ -44,18 +44,17 @@ export class HomeComponent implements OnInit {
   imagesStore2 = [
     {
       id: '1',
-      src: 'assets/cake/footer-cake-1.svg'
+      src: 'assets/home/cake.jpeg'
 
     },
     {
       id: '2',
-      src: 'assets/cake/footer-cake-2.svg'
+      src: 'assets/home/cake.jpeg'
 
     },
     {
       id: '3',
-      src: 'assets/cake/footer-cake-3.svg'
-
+      src: 'assets/home/cake.jpeg'
     }
   ]
   serviceCarousel: OwlOptions = {
