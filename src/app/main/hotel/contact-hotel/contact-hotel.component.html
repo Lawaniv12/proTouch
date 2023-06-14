@@ -11,7 +11,7 @@ subtitle="CHAT WITH US">
     <div
       class="grid sm:grid-cols-12 gap-12"
     >
-      <div class="sm:col-span-8">
+      <div class="sm:col-span-8 font-worksans">
         <form action="" [formGroup]="contactForm" class="flex flex-col gap-4 md:gap-6">
           <textarea
             name=""
@@ -45,17 +45,17 @@ subtitle="CHAT WITH US">
           <button class="text-[#62760C] font-light border-solid border border-[#62760C] w-40 p-3 sm:p-5 hover:bg-[#62760C] hover:text-white" [disabled]="contactForm.invalid" [ngClass]="{'disabled-button': contactForm.invalid}" (click)="sendHotelContactUs()">SEND</button>
         </form>
       </div>
-      <div class="sm:col-span-4 flex flex-col gap-5">
+      <div class="sm:col-span-4 flex flex-col gap-5 font-worksans">
           <div class="flex items-center gap-3">
               <img src="assets/cake/contact/address-icon.svg" class="w-7 block" alt="">
               <div class="text-sm md:text-base font-light">
-                  <p class="leading-6">20/22 ABIODUN OLAJIRE STREET, EWU OWA,OPP <br> FOMMON FILLING STATION, GBERIGBE,IKORODU, LAGOS</p>
+                  <p class="leading-6">20/22 Abiodun Olajire Street, Ewu Owa, Opp <br> Fommon Filling Station, Gberigbe, Ikorodu, Lagos</p>
               </div>
           </div>
           <div class="flex items-center gap-3">
               <img src="assets/cake/contact/phone-icon.svg" class="w-7 block" alt="">
               <div class="text-sm md:text-base font-light">
-                  <p class="leading-6">+234 904 331 3214 <br> Mon to Fri   3:00 pm to 12:00 Noon</p>
+                  <p class="leading-6 ">+234 904 331 3214 <br> Mon to Fri   3:00 pm to 12:00 Noon</p>
               </div>
           </div>
           <div class="flex items-center gap-3">
