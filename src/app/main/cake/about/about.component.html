@@ -3,11 +3,15 @@
   heading="About Us"
   paragraph="Check out everything about us, our categories of cakes and 
   different prices."
+  [overRideClass]="true"
+  [customClass]="'md:h-[70vh] h-[50vh]'"
 ></app-cake-header>
 <section
   class="grid grid-cols-1 md:grid-cols-2 py-14 px-6 sm:py-20 sm:px-10 md:py-36 md:px-16 gap-20 bg-black items-center relative"
 >
-  <div><img src="../../assets/cake/story-img.png" class="w-full" alt="" /></div>
+<div class="md:h-[650px]">
+  <img src="../../assets/cake/product/packaged-desserts.png" class="w-full h-full" alt="" />
+</div>
   <div>
     <h4 class=" text-[#DAB748] text-base md:text-lg font-montserrat">Most Popular</h4>
     <h3 class="font-bold text-xl md:text-2xl font-montserrat my-4 text-white">Our Exclusive Cakes</h3>
@@ -43,11 +47,11 @@
   </div> -->
 </section>
 
-<div class="md:pl-20 bg-[#180A0A] md:p-0 md:py-32 text-white font-worksans grid grid-cols-1 md:grid-cols-2 items-center">
+<div class="md:px-20 bg-[#180A0A] md:p-0 md:py-32 text-white font-worksans">
 
- <div class="px-5">
+ <div class="px-5 mx-auto w-full items-center text-center">
   <h4 class="md:text-4xl text-2xl md:font-bold md:my-5 my-2">What we Offer</h4>
-  <div class="flex md:gap-16 gap-4 flex-col md:flex-row">
+  <div class="flex md:gap-32 gap-4 flex-col md:flex-row mx-auto w-fit">
     <div>
       <p class="md:text-2xl text-lg md:font-bold md:my-3">CAKES</p>
       <ul class="list-disc list-inside py-4 md:text-base text-sm">
@@ -73,21 +77,22 @@
         <li>MACARONS</li>
       </ul>
     </div>
+    <div>
+      <p class="md:text-2xl text-lg font-bold md:my-3 my-1">DESSERT</p>
+    <ul class="list-disc list-inside md:py-4 py-2 md:text-base text-sm">
+      <li>
+        PACKED DESSERTS
+      </li>
+      <li>PLATED DESSERTS</li>
+      
+    </ul>
+    </div>
   </div>
-  <div>
-    <p class="md:text-2xl text-lg font-bold md:my-3 my-1">DESSERT</p>
-  <ul class="list-disc list-inside md:py-4 py-2 md:text-base text-sm">
-    <li>
-      PACKED DESSERTS
-    </li>
-    <li>PLATED DESSERTS</li>
-    
-  </ul>
-  </div>
+  
  </div>
- <div class="h-full">
+ <!-- <div class="h-full">
   <img src="assets/cake/cake-sample-14.jpg" alt="" class="w-full">
- </div>
+ </div> -->
 </div>
 
 <section class="py-14 px-6 sm:py-20 sm:px-10 md:py-32 md:px-16 bg-black grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5" id="about-card">
@@ -98,10 +103,7 @@
     <h4 class="text-center text-[#DAB748] font-montserrat text-base md:text-lg font-bold">
       Quality
     </h4>
-    <p class="text-center mb-10 text-sm md:text-base text-white">
-      Everything about this cakes is stated here
-      for your perusal. Please find it and read.
-    </p>
+   
   </div>
   <div class="border-2 border-white rounded-br-[120px] shadow-md py-6 md:py-10 px-5 md:my-5">
     <div class="rounded-full bg-white p-10 h-36 w-36 mx-auto flex items-center justify-center mb-6">
@@ -110,10 +112,7 @@
     <h4 class="text-center text-[#DAB748] font-montserrat text-base md:text-lg font-bold">
       Timeliness
     </h4>
-    <p class="text-center mb-10 text-sm md:text-base text-white">
-      Everything about this cakes is stated here
-      for your perusal. Please find it and read.
-    </p>
+  
   </div>
   <div class="border-2 border-white shadow-md py-6 md:py-10 px-5 md:my-5">
     <div class="rounded-full bg-white p-10 h-36 w-36 mx-auto flex items-center justify-center mb-6">
@@ -122,14 +121,11 @@
     <h4 class="text-center font-montserrat text-base text-[#DAB748] md:text-lg font-bold">
       Best Taste
     </h4>
-    <p class="text-center mb-10 text-sm md:text-base text-white">
-      Everything about this cakes is stated here
-      for your perusal. Please find it and read.
-    </p>
+   
   </div>
 </section>
 
-<section class="bg-[#1A160B] py-14 px-6 sm:py-20 sm:px-10 md:py-[156px] md:px-16">
+<section class="bg-[#180A0A] py-14 px-6 sm:py-20 sm:px-10 md:py-[156px] md:px-16">
   <h4 class="text-center text-[#DAB748] text-base md:text-lg font-worksans">
     Testimonial
   </h4>
@@ -140,19 +136,53 @@
     <owl-carousel-o [options]="testimonialCarousel">
       <ng-template carouselSlide>
         <div class="bg-black rounded-br-[120px] shadow-md border-2 border-white py-14 px-10 m-2">
-          <p class="mb-4 text-sm md:text-base text-white">
-            “Lorem ipsum dolor sit amet consectetur. Sit facilisi morbi nulla
-            nulla auctor nunc id congue. Neque amet lacus duis felis mi nec.
-            Gravida commodo amet justo felis porttitor. Consectetur aliquam
-            varius metus nisi velit pharetra orci.”
+          <p class="mb-4 text-sm md:text-base text-white h-[80px]">
+            “I love love my cake and the flavours, the texture as well was is
+            good, and thank you for the extra size”.”
           </p>
           <div class="flex items-center gap-3">
             <div>
-              <img src="../../assets/cake/testimony-person.png" alt="" />
+              <img src="../../assets/cake/av1.png" alt="" class="w-16 h-16" />
             </div>
             <div>
               <h4 class="text-base md:text-lg text-[#DAB748] font-worksans">
-                Oliver Jems
+                Derby From Shomolu
+              </h4>
+           
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="bg-black rounded-br-[120px] shadow-md border-2 border-white py-14 px-10 m-2">
+          <p class="mb-4 text-sm md:text-base text-white h-[80px]">
+            "delivered, you never disappoint us, we are grateful"
+          </p>
+          <div class="flex items-center gap-3">
+            <div>
+              <img src="../../assets/cake/av1.png" alt="" class="w-16 h-16"/>
+            </div>
+            <div>
+              <h4 class="text-base md:text-lg text-[#DAB748] font-worksans">
+                Mrs adeola from badore,Ajah.              </h4>
+              
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="bg-black rounded-br-[120px] shadow-md border-2 border-white py-14 px-10 m-2">
+          <p class="mb-4 text-sm md:text-base text-white h-[80px]">
+            “Thanks for making my daughter&#39;s birthday cake look so beautiful and taste
+            great. 2 wonderful cakes in 2weeks you really out did yourself”
+          </p>
+          <div class="flex items-center gap-3">
+            <div>
+              <img src="../../assets/cake/av1.png" alt=""class="w-16 h-16" />
+            </div>
+            <div>
+              <h4 class="text-base md:text-lg text-[#DAB748] font-worksans">
+                Lezlieehiri
               </h4>
               <p class="font-worksans text-sm md:text-base">Business Man</p>
             </div>
@@ -161,19 +191,17 @@
       </ng-template>
       <ng-template carouselSlide>
         <div class="bg-black rounded-br-[120px] shadow-md border-2 border-white py-14 px-10 m-2">
-          <p class="mb-4 text-sm md:text-base text-white">
-            “Lorem ipsum dolor sit amet consectetur. Sit facilisi morbi nulla
-            nulla auctor nunc id congue. Neque amet lacus duis felis mi nec.
-            Gravida commodo amet justo felis porttitor. Consectetur aliquam
-            varius metus nisi velit pharetra orci.”
+          <p class="mb-4 text-sm md:text-base text-white h-[80px]">
+            “Your desserts were the talk of our wedding , the setup matched our
+            wedding decor and your service team were professional to the core”
           </p>
           <div class="flex items-center gap-3">
             <div>
-              <img src="../../assets/cake/testimony-person.png" alt="" />
+              <img src="../../assets/cake/av2.png" alt="" class="w-16 h-16"/>
             </div>
             <div>
               <h4 class="text-base md:text-lg text-[#DAB748] font-worksans">
-                Oliver Jems
+                Mr and mrs Johnson
               </h4>
               <p class="font-worksans text-sm md:text-base">Business Man</p>
             </div>
@@ -182,21 +210,19 @@
       </ng-template>
       <ng-template carouselSlide>
         <div class="bg-black rounded-br-[120px] shadow-md border-2 border-white py-14 px-10 m-2">
-          <p class="mb-4 text-sm md:text-base text-white">
-            “Lorem ipsum dolor sit amet consectetur. Sit facilisi morbi nulla
-            nulla auctor nunc id congue. Neque amet lacus duis felis mi nec.
-            Gravida commodo amet justo felis porttitor. Consectetur aliquam
-            varius metus nisi velit pharetra orci.”
+          <p class="mb-4 text-sm md:text-base text-white h-[80px]">
+            “the brownies were so gooey, everyone in my office loved it, ordering more
+            next week for our christmas party”
           </p>
           <div class="flex items-center gap-3">
             <div>
-              <img src="../../assets/cake/testimony-person.png" alt="" />
+              <img src="../../assets/cake/av2.png" alt="" class="w-16 h-16"/>
             </div>
             <div>
               <h4 class="text-base md:text-lg text-[#DAB748] font-worksans">
-                Oliver Jems
+                Adebola from lekki
               </h4>
-              <p class="font-worksans text-sm md:text-base">Business Man</p>
+              
             </div>
           </div>
         </div>
